@@ -1394,3 +1394,16 @@ ol.wos-biblio li.is-target { background: color-mix(in srgb, var(--accent) 10%, t
   font-family: var(--font-ui); font-size: clamp(15px, 2vw, 19px); letter-spacing: 0.06em;
   color: var(--off-white); margin: -2px 0 18px;
 }
+
+/* ---------- Note on the word Adivasi ---------- */
+.wos-term { border-left: 3px solid var(--accent); padding-left: 20px; }
+.wos-term-sources { margin-top: 14px; font-family: var(--font-ui); font-size: 13px; }
+.wos-term-sources summary { cursor: pointer; color: var(--accent); }
+.wos-term-sources ul { margin: 10px 0 0; padding-left: 18px; line-height: 1.5; }
+.wos-term-sources li { margin-bottom: 6px; }
+@media (max-width: 760px) { .wos-term { padding-left: 14px; } }
+
+.wos-device-note {
+  font-family: var(--font-ui); font-size: 12.5px; letter-spacing: 0.02em; color: var(--dark-soft);
+  margin: 18px auto 0; max-width: 560px;
+}
