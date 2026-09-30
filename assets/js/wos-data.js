@@ -175,7 +175,7 @@ window.WOS_RECORDS = [
   },
   {
     id: "WOS-023", type: "film", title: "Accumulated Injustice", creator: "AKHRA, with Adivasi-Koordination in Germany",
-    year: "2015", region: "India", coverage: "Rourkela, Odisha", format: "Documentary, c. 27 min", paths: ["nature"],
+    year: "2015", region: "Odisha", coverage: "Rourkela, Odisha", format: "Documentary, c. 27 min", paths: ["nature"],
     subjects: ["industrialization", "steel plant", "displacement"],
     access: "open", url: "https://www.youtube.com/watch?v=CpbIsrjDZuM", urlLabel: "Watch on YouTube",
     thumb: "https://img.youtube.com/vi/CpbIsrjDZuM/hqdefault.jpg",
@@ -844,5 +844,14 @@ window.WOS_RECORDS = [
     access: "institutional", url: "https://doi.org/10.1093/oxfordhb/9780197526224.013.28", urlLabel: "DOI",
     citation: "Toppo, Biju, and Aparna Sharma. 2025. “To Walk Is to Dance, to Speak Is to Sing: Akhra Ranchi’s Filmic Representations of Adivasi Dance in Jharkhand.” In *The Oxford Handbook of Indian Dance*, edited by Anurima Banerji and Prarthana Purkayastha. New York: Oxford University Press.",
     description: "A chapter co-written by an AKHRA founder on how the collective's films represent Adivasi dance, where walking, speaking, dancing, and singing are continuous."
+  },
+  {
+    id: "WOS-114", curator: true, type: "film", title: "Eka Nari Sangathan", creator: "Arpit Gaind (editor, producer), with Bhavya Chitranshi, Ashutosh Kumar, and Eka Nari Sangathan",
+    year: "2019", region: "Odisha", coverage: "Emaliguda village, Rayagada district, Odisha", language: "Kui", format: "Documentary, 6 min 30 sec",
+    paths: ["culture"], subjects: ["single women's association", "women's collectives", "labour", "solidarity"],
+    access: "open", url: "https://player.mediadelivery.net/play/766686/13eb8fc7-2a8b-4351-9136-fd841becc3f2", urlLabel: "Watch", bunny: "766686/13eb8fc7-2a8b-4351-9136-fd841becc3f2",
+    thumb: "assets/img/film/eka-nari-sangathan-still.jpg",
+    description: "On Eka Nari Sangathan, a single women's association begun by Bhavya Chitranshi and the women of the sangathan. More than an economic self-help group, it is a space where women named \u201csingle\u201d for one reason or another share work, labour, and belonging, and shape identities and futures of their own: their aspirations, anxieties, community, and solidarity with one another.",
+    note: "Made in collaboration with Bhavya Chitranshi, Ashutosh Kumar, and Eka Nari Sangathan, with footage by all of us. Special thanks to Anup Dhar. The sangathan is also one of the three practices in Envisioning Development Practice (WOS-002)."
   }
 ];
