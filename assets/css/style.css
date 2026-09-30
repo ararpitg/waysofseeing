@@ -1467,3 +1467,8 @@ header.site-header.wos-tabsbar.scrolled { box-shadow: 0 6px 18px rgba(0, 0, 0, 0
 .wos-brand-credit a { color: var(--off-white); border-bottom: 1px solid rgba(236, 229, 214, 0.35); }
 .wos-brand-credit a:hover { border-bottom-color: var(--off-white); }
 .wos-brand--home .wos-brand-credit { font-size: 14px; margin-top: 8px; }
+
+/* The palette is designed as one scheme; ask browsers not to auto-darken it */
+:root { color-scheme: light only; }
+.wos-brand-credit { color: #e2dbcd; }
+.wos-brand-credit a { color: #fff; }
