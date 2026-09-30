@@ -1472,3 +1472,8 @@ header.site-header.wos-tabsbar.scrolled { box-shadow: 0 6px 18px rgba(0, 0, 0, 0
 :root { color-scheme: light only; }
 .wos-brand-credit { color: #e2dbcd; }
 .wos-brand-credit a { color: #fff; }
+
+/* Abstract iris / aperture behind the title block */
+.wos-brand { background: var(--dark) url("../img/iris.svg") center / cover no-repeat; }
+.wos-brand--home { padding-top: 96px; padding-bottom: 40px; background-position: center 50%; }
+@media (max-width: 760px) { .wos-brand--home { padding-top: 60px; padding-bottom: 24px; } }
