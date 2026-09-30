@@ -1402,3 +1402,8 @@ ol.wos-biblio li.is-target { background: color-mix(in srgb, var(--accent) 10%, t
 .wos-term-sources ul { margin: 10px 0 0; padding-left: 18px; line-height: 1.5; }
 .wos-term-sources li { margin-bottom: 6px; }
 @media (max-width: 760px) { .wos-term { padding-left: 14px; } }
+
+.wos-device-note {
+  font-family: var(--font-ui); font-size: 12.5px; letter-spacing: 0.02em; color: var(--dark-soft);
+  margin: 18px auto 0; max-width: 560px;
+}
