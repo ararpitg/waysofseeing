@@ -1474,7 +1474,6 @@ header.site-header.wos-tabsbar.scrolled { box-shadow: 0 6px 18px rgba(0, 0, 0, 0
 .wos-brand-credit a { color: #fff; }
 
 /* Abstract iris / aperture behind the title block */
-.wos-brand { background: var(--dark) url("../img/iris.svg") center / cover no-repeat; }
 .wos-brand--home { padding-top: 96px; padding-bottom: 40px; background-position: center 50%; }
 @media (max-width: 760px) { .wos-brand--home { padding-top: 60px; padding-bottom: 24px; } }
 
@@ -1492,3 +1491,26 @@ header.site-header.wos-tabsbar.scrolled { box-shadow: 0 6px 18px rgba(0, 0, 0, 0
   .wos-brand--home .wos-brand-lens { width: 132px; }
   .wos-brand--home { padding-top: 36px; }
 }
+
+/* ---------- House photograph as the title background ---------- */
+.wos-brand {
+  background:
+    linear-gradient(to bottom, rgba(20, 19, 18, 0.55) 0%, rgba(20, 19, 18, 0.45) 45%, rgba(20, 19, 18, 0.85) 100%),
+    url("../img/waysofseeing-house.jpg") center 55% / cover no-repeat;
+  padding: 46px 0 22px;
+}
+.wos-brand--home {
+  min-height: 68vh; display: flex; align-items: flex-end; justify-content: center;
+  padding: 72px 0 34px; background-position: center, center 60%;
+}
+.wos-brand--home > .wrap { width: 100%; }
+.wos-brand-title { color: #fff; text-shadow: 0 2px 22px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.6); }
+.wos-brand-sub { color: #fff; font-weight: 500; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.85); }
+.wos-brand-credit { color: #f1ebdf; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.9); }
+.wos-brand-credit a { color: #fff; border-bottom-color: rgba(255, 255, 255, 0.6); }
+.wos-masthead--home .wrap { padding-top: 34px; }
+@media (max-width: 760px) {
+  .wos-brand--home { min-height: 52vh; padding: 48px 0 24px; }
+}
+/* the Adivasi note's "read more" */
+.wos-term .toggle-btn { color: var(--accent); margin-top: 4px; }
