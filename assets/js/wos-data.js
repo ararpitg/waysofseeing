@@ -853,5 +853,88 @@ window.WOS_RECORDS = [
     thumb: "assets/img/film/eka-nari-sangathan-still.jpg",
     description: "On Eka Nari Sangathan, a single women's association begun by Bhavya Chitranshi and the women of the sangathan. More than an economic self-help group, it is a space where women named \u201csingle\u201d for one reason or another share work, labour, and belonging, and shape identities and futures of their own: their aspirations, anxieties, community, and solidarity with one another.",
     note: "Made in collaboration with Bhavya Chitranshi, Ashutosh Kumar, and Eka Nari Sangathan, with footage by all of us. Special thanks to Anup Dhar. The sangathan is also one of the three practices in Envisioning Development Practice (WOS-002)."
+  },
+  /* ---------- Shriprakash and Kritika, Ranchi ---------- */
+  {
+    id: "WOS-115", type: "collective", title: "Kritika", creator: "Shriprakash (chief coordinator)",
+    year: "1990", region: "Jharkhand", coverage: "Ranchi, Jharkhand", paths: ["culture", "nature"],
+    subjects: ["documentary", "uranium mining", "Adivasi rights", "culture and communication"],
+    access: "open", url: "https://www.youtube.com/@kritika_productions", urlLabel: "YouTube channel",
+    description: "A culture and communication group working in Jharkhand since 1990, coordinated by the documentary filmmaker Shriprakash, whose films on uranium mining at Jadugoda, dams, and Adivasi history are gathered on the group's channel, Kritika productions.",
+    note: "Shriprakash was a founding member of the Jharkhandi Organization Against Radiation (JOAR), Jadugoda. He credits himself with a single name as a protest against caste."
+  },
+  {
+    id: "WOS-116", type: "film", title: "Addo Miyad Ulgulan (Another Revolt / Ek aur Ulgulan)", creator: "Shriprakash, Kritika",
+    year: "1995", region: "Jharkhand", language: "Hindi, with English subtitles", format: "Documentary, 40 min",
+    paths: ["nature"], subjects: ["Koel Karo hydroelectric project", "dams", "Adivasi resistance"],
+    access: "open", url: "https://www.youtube.com/watch?v=x9eE1dBitmM", thumb: "https://img.youtube.com/vi/x9eE1dBitmM/hqdefault.jpg", urlLabel: "Watch on YouTube",
+    description: "On Adivasi opposition to the Koel Karo hydroelectric project in Jharkhand. The uploaded version adds four minutes of footage of the 2001 killings."
+  },
+  {
+    id: "WOS-117", type: "film", title: "Buddha Weeps in Jadugoda (Ragi: Kana: Ko Bonga Buru)", creator: "Shriprakash, Kritika",
+    year: "1999", region: "Jharkhand", coverage: "Jadugoda, East Singhbhum", language: "Hindi and English", format: "Documentary, c. 55 min",
+    paths: ["nature"], subjects: ["uranium mining", "radiation", "health", "UCIL"],
+    access: "open", url: "https://www.youtube.com/watch?v=FxO_LlHaYvs", thumb: "https://img.youtube.com/vi/FxO_LlHaYvs/hqdefault.jpg", urlLabel: "Watch on YouTube",
+    description: "On the harm to Adivasi health and land from uranium mining and tailings by the Uranium Corporation of India at Jadugoda. It won the Grand Prize at the Earth Vision Tokyo Global Environmental Film Festival.",
+    note: "Sources give different runtimes (52 to 76 min); the full upload runs about 55 minutes."
+  },
+  {
+    id: "WOS-118", type: "film", title: "Buru Sengal (The Fire Within)", creator: "Shriprakash, Kritika",
+    year: "2002", region: "Jharkhand", language: "Hindi and Santhali", format: "Documentary, 57 min",
+    paths: ["nature", "culture"], subjects: ["Adivasi resistance", "land"],
+    access: "request", url: "https://www.youtube.com/watch?v=ms-kzxoYUyM", thumb: "https://img.youtube.com/vi/ms-kzxoYUyM/hqdefault.jpg", urlLabel: "Watch an excerpt",
+    description: "A documentary by Shriprakash; only a five-minute excerpt is public, on the Kritika channel."
+  },
+  {
+    id: "WOS-119", type: "film", title: "Buru Gaara (Pahari Nadi)", creator: "Shriprakash; produced by PSBT with Doordarshan",
+    year: "2008", region: "Jharkhand", language: "Hindi", format: "Documentary, 30 min",
+    paths: ["culture"], subjects: ["Dayamani Barla", "Nirmala Putul", "Adivasi women writers", "journalism"],
+    access: "open", url: "https://www.youtube.com/watch?v=LNS4QNrTSho", thumb: "https://img.youtube.com/vi/LNS4QNrTSho/hqdefault.jpg", urlLabel: "Watch on YouTube",
+    description: "Two Adivasi women in Jharkhand, the journalist Dayamani Barla and the poet Nirmala Putul, assert identity through writing. Best Film on Social Issues, non-feature section, 56th National Film Awards.",
+    note: "Cinematography by Sanjay Kumar; music by Lalu Shankar and Bisun Munda. Details from PSBT's film page, psbt.org/films/buru-gaara."
+  },
+  {
+    id: "WOS-120", type: "film", title: "Jadugoda: The Black Magic", creator: "Shriprakash, Kritika",
+    region: "Jharkhand", coverage: "Jadugoda, East Singhbhum", language: "English", format: "Short documentary, 9 min",
+    paths: ["nature"], subjects: ["uranium mining", "radiation"],
+    access: "open", url: "https://www.youtube.com/watch?v=eIOmavVcG3M", thumb: "https://img.youtube.com/vi/eIOmavVcG3M/hqdefault.jpg", urlLabel: "Watch on YouTube",
+    description: "A short film on uranium mining and radiation at Jadugoda.",
+    note: "Sources date it 2007 or 2009."
+  },
+  {
+    id: "WOS-121", type: "film", title: "Eer... Stories in Stone", creator: "Shriprakash; produced by PSBT",
+    year: "2011", region: "Jharkhand", format: "Documentary, c. 51 min",
+    paths: ["culture", "archives"], subjects: ["stone monuments", "Adivasi history", "memory"],
+    access: "open", url: "https://www.youtube.com/watch?v=m21RJwDt2Ec", thumb: "https://img.youtube.com/vi/m21RJwDt2Ec/hqdefault.jpg", urlLabel: "Watch on YouTube",
+    description: "Tribal history, erased from mainstream accounts, read in the stone monuments that record it.",
+    note: "A counter-archive in stone: a close companion to this archive's questions about who keeps the record."
+  },
+  {
+    id: "WOS-122", type: "film", title: "Hul Sengal Aguwa (Unsung Heroes of Hul)", creator: "Shriprakash; produced by PSBT",
+    year: "2012", region: "Jharkhand", format: "Documentary, c. 60 min",
+    paths: ["culture", "archives"], subjects: ["Santhal Hul", "memory", "films about movements"],
+    access: "open", url: "https://www.youtube.com/watch?v=cSYtlYiqIMM", thumb: "https://img.youtube.com/vi/cSYtlYiqIMM/hqdefault.jpg", urlLabel: "Watch on YouTube",
+    description: "Retraces the memory of two Indigenous people's movements, and of the films made about them."
+  },
+  {
+    id: "WOS-123", type: "film", title: "Nabikei (Footprint)", creator: "Shriprakash",
+    year: "2017", region: "Global", coverage: "Diné (Navajo), Laguna, and Acoma lands, US Southwest; Jadugoda", language: "English", format: "Documentary, 60 min",
+    paths: ["nature"], subjects: ["uranium mining", "Diné", "Indigenous peoples", "Jadugoda"],
+    access: "request", url: "https://uraniumfilmfestival.org/en/american-southwest-2018", urlLabel: "Festival listing",
+    description: "The legacy of uranium mining for the Diné, Laguna, and Acoma nations, with some five thousand abandoned mines, set in parallel with Jadugoda. Screened at the International Uranium Film Festival, American Southwest, 2018. No public stream."
+  },
+  {
+    id: "WOS-124", type: "film", title: "Congo, The Blood in Our Pocket!", creator: "Shriprakash, Kritika",
+    region: "Global", coverage: "Democratic Republic of the Congo", format: "Short documentary, 15 min",
+    paths: ["nature"], subjects: ["coltan", "mineral extraction", "global supply chains"],
+    access: "open", url: "https://www.youtube.com/watch?v=x8r0l3p9uuw", thumb: "https://img.youtube.com/vi/x8r0l3p9uuw/hqdefault.jpg", urlLabel: "Watch on YouTube",
+    description: "On coltan and other mineral extraction in the Congo, and who bears its cost."
+  },
+  {
+    id: "WOS-125", type: "film", title: "Keemat Chukati Zindagi", creator: "Shriprakash",
+    region: "Jharkhand", format: "Documentary, 86 min",
+    paths: ["culture"], subjects: ["Mahendra Singh", "people's movements", "political violence"],
+    access: "request", url: "http://chennaifilmfestival.blogspot.com/2022/01/", urlLabel: "Festival listing",
+    description: "On the poet and people's leader Mahendra Singh, killed in 2005, made over thirteen years. Screened in competition at the 10th Chennai International Documentary and Short Film Festival, 2022. No public stream."
   }
 ];
