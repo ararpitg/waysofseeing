@@ -1462,3 +1462,8 @@ header.site-header.wos-tabsbar.scrolled { box-shadow: 0 6px 18px rgba(0, 0, 0, 0
 .wos-brand--home .wos-brand-title { font-size: clamp(50px, 7.4vw, 88px); }
 .wos-brand-sub { margin-top: 10px; }
 .wos-brand--home .wos-brand-sub { margin-top: 14px; }
+
+.wos-brand-credit { margin: 6px auto 0; font-family: var(--font-ui); font-size: 13px; letter-spacing: 0.06em; color: var(--dark-soft); }
+.wos-brand-credit a { color: var(--off-white); border-bottom: 1px solid rgba(236, 229, 214, 0.35); }
+.wos-brand-credit a:hover { border-bottom-color: var(--off-white); }
+.wos-brand--home .wos-brand-credit { font-size: 14px; margin-top: 8px; }
