@@ -1477,3 +1477,18 @@ header.site-header.wos-tabsbar.scrolled { box-shadow: 0 6px 18px rgba(0, 0, 0, 0
 .wos-brand { background: var(--dark) url("../img/iris.svg") center / cover no-repeat; }
 .wos-brand--home { padding-top: 96px; padding-bottom: 40px; background-position: center 50%; }
 @media (max-width: 760px) { .wos-brand--home { padding-top: 60px; padding-bottom: 24px; } }
+
+/* Fisheye lens-eye emblem above the title */
+.wos-brand-lens {
+  display: block; margin: 0 auto 14px; width: 84px; height: 84px;
+  filter: drop-shadow(0 6px 22px rgba(217, 114, 47, 0.45));
+  transition: transform 0.4s ease;
+}
+.wos-brand--home .wos-brand-lens { width: clamp(150px, 16vw, 210px); height: auto; margin-bottom: 22px; }
+.wos-brand-head a:hover .wos-brand-lens { transform: scale(1.04) rotate(-4deg); }
+.wos-brand--home { padding-top: 56px; }
+@media (max-width: 760px) {
+  .wos-brand-lens { width: 64px; height: 64px; margin-bottom: 10px; }
+  .wos-brand--home .wos-brand-lens { width: 132px; }
+  .wos-brand--home { padding-top: 36px; }
+}
