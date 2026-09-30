@@ -17,6 +17,7 @@
     },
     roles: ["Student", "Professional", "Entrepreneur", "Researcher", "Other"],
     heard: ["Social Media", "Friend or Colleague", "Online Advertisement", "Search Engine"],
+    noEmailAddress: "no-email@waysofseeing.in",   // placeholder for visitors without an address
     storageKey: "wos-entered"
   };
 
@@ -117,6 +118,8 @@
     var data = new URLSearchParams();
     data.append(f.name, name.value.trim());
     data.append(f.email, noEmail ? "NA" : email.value.trim());
+    // The form also has Google's own "collect email addresses" box, which must hold an address
+    data.append("emailAddress", noEmail ? WOS_GATE.noEmailAddress : email.value.trim());
     data.append(f.affiliation, affiliation.value.trim());
     data.append(f.role, role.value);
     if (heard.value === "Other") {

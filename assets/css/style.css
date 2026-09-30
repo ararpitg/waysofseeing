@@ -1367,3 +1367,30 @@ html.wos-gated body > *:not(.wos-gate) { filter: blur(7px); pointer-events: none
 .wos-gate-card button[type="submit"]:hover { background: var(--accent); }
 .wos-gate-note { font-family: var(--font-ui); font-size: 12px !important; color: var(--ink-soft); margin: 12px 0 0 !important; }
 .wos-gate-error { color: var(--accent); font-family: var(--font-ui); font-size: 13px !important; margin: 8px 0 0 !important; }
+
+/* ---------- Multi-page site: top menu, page heads, offsets ---------- */
+.wos-site header.site-header .wrap { gap: 14px; }
+.wos-pagehead .wrap { padding-top: 40px; padding-bottom: 34px; }
+.wos-pagehead h1 { font-size: clamp(28px, 4vw, 42px); margin-bottom: 8px; }
+.wos-masthead.wos-pagehead .wos-lede { font-size: 17px; margin-bottom: 0; }
+.wos-site main.wos { padding-top: 40px; }
+.wos-site main.wos h2 { margin-top: 48px; }
+.wos-site main.wos .wrap > h2:first-child { margin-top: 0; }
+.wos-site .wos-record, .wos-site .wos-biblio li, .wos-site .wos-biblio-group, .wos-site main.wos [id] {
+  scroll-margin-top: calc(var(--header-h, 80px) + 18px);
+}
+.wos-site .wos-controls { top: var(--header-h, 80px); }
+.wos-site .wos-aside { top: calc(var(--header-h, 80px) + 24px); }
+ol.wos-biblio li.is-target { background: color-mix(in srgb, var(--accent) 10%, transparent); }
+@media (min-height: 860px) and (min-width: 861px) {
+  .wos-site .wos-record { scroll-margin-top: calc(var(--header-h, 80px) + 250px); }
+}
+@media (max-width: 760px) {
+  .wos-pagehead .wrap { padding-top: 26px; padding-bottom: 22px; }
+  .wos-masthead.wos-pagehead .wos-lede { font-size: 15.5px; }
+}
+
+.wos-subtitle {
+  font-family: var(--font-ui); font-size: clamp(15px, 2vw, 19px); letter-spacing: 0.06em;
+  color: var(--off-white); margin: -2px 0 18px;
+}

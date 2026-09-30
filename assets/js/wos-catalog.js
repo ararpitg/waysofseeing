@@ -41,14 +41,27 @@
         var html = citeHtml(r.citation || r.title);
         if (r.url) html += ' <a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(r.urlLabel || "Link") + " ↗</a>";
         html += '<span class="wos-annotation">' + esc(r.description) +
-          ' <a href="#' + r.id + '">Catalog record ' + r.id + "</a></span>";
+          ' <a href="catalog.html#' + r.id + '">Catalog record ' + r.id + "</a></span>";
         li.innerHTML = html;
         ol.appendChild(li);
       });
       group.appendChild(ol);
       readingsRoot.appendChild(group);
     });
+    // The list is built after the page loads, so a link to one entry has to be followed by hand
+    var wanted = location.hash ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
+    if (wanted) {
+      wanted.classList.add("is-target");
+      setTimeout(function () { wanted.scrollIntoView({ block: "start" }); }, 60);
+    }
   }
+
+  // Live counts, e.g. on the home page: <strong data-wos-count="film"></strong> / data-wos-count="all"
+  document.querySelectorAll("[data-wos-count]").forEach(function (span) {
+    var k = span.getAttribute("data-wos-count");
+    span.textContent = k === "all" ? records.length
+      : records.filter(function (r) { return r.type === k; }).length;
+  });
 
   var root = document.getElementById("wos-catalog");
   if (!root || !records.length) return;
@@ -314,12 +327,6 @@
       search.value = "";
       render();
     });
-  });
-
-  // Live counts in the masthead: <span data-wos-count="film"></span> / data-wos-count="all"
-  document.querySelectorAll("[data-wos-count]").forEach(function (span) {
-    var k = span.getAttribute("data-wos-count");
-    span.textContent = k === "all" ? records.length : countBy("type", k);
   });
 
   render();
