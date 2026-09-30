@@ -1514,3 +1514,12 @@ header.site-header.wos-tabsbar.scrolled { box-shadow: 0 6px 18px rgba(0, 0, 0, 0
 }
 /* the Adivasi note's "read more" */
 .wos-term .toggle-btn { color: var(--accent); margin-top: 4px; }
+
+.wos-permission { font-family: var(--font-ui); font-size: 14px; color: var(--ink-soft); font-style: italic; }
+.wos-brand--home { position: relative; }
+.wos-cover-credit {
+  position: absolute; right: 18px; bottom: 10px; margin: 0; font-family: var(--font-ui); font-size: 11px;
+  letter-spacing: 0.04em; color: rgba(255, 255, 255, 0.78); text-shadow: 0 1px 6px rgba(0, 0, 0, 0.9);
+}
+.wos-footer .wos-footer-credit { font-size: 12px !important; opacity: 0.85; }
+@media (max-width: 760px) { .wos-cover-credit { position: static; text-align: center; margin-top: 14px; } }
