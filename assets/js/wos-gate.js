@@ -46,8 +46,8 @@
       '<input id="wos-gate-email" type="email" autocomplete="email" required>' +
       '<label class="wos-gate-check"><input id="wos-gate-noemail" type="checkbox"> ' +
       '<span>I don\u2019t have an email address</span></label>' +
-      '<label for="wos-gate-affiliation">Affiliation <span id="wos-gate-aff-hint">(optional)</span></label>' +
-      '<input id="wos-gate-affiliation" type="text" autocomplete="organization" ' +
+      '<label for="wos-gate-affiliation">Affiliation</label>' +
+      '<input id="wos-gate-affiliation" type="text" autocomplete="organization" required ' +
       'placeholder="Organisation, institution, village or community">' +
       '<label for="wos-gate-role">Which best describes your role?</label>' +
       '<select id="wos-gate-role" required>' + options(WOS_GATE.roles) + '</select>' +
@@ -76,13 +76,12 @@
     if (gate.parentNode) gate.parentNode.removeChild(gate);
   }
 
-  // No email: the address is recorded as "NA" and the affiliation becomes required instead
+  // No email: the address is recorded as "NA"
   gate.addEventListener("change", function (e) {
     if (e.target.id !== "wos-gate-noemail") return;
     var email = $("email");
     email.disabled = e.target.checked;
     if (e.target.checked) email.value = "";
-    $("aff-hint").textContent = e.target.checked ? "(required)" : "(optional)";
   });
 
   gate.addEventListener("change", function (e) {
@@ -107,7 +106,7 @@
     if (!noEmail && (!email.value.trim() || !email.checkValidity())) {
       return fail("Please enter a valid email address, or tick the box if you don\u2019t have one.", email);
     }
-    if (noEmail && !affiliation.value.trim()) {
+    if (!affiliation.value.trim()) {
       return fail("Please tell us your organisation, institution, village or community.", affiliation);
     }
     if (!role.value) return fail("Please choose the role that fits best.", role);
@@ -118,7 +117,7 @@
     var data = new URLSearchParams();
     data.append(f.name, name.value.trim());
     data.append(f.email, noEmail ? "NA" : email.value.trim());
-    if (affiliation.value.trim()) data.append(f.affiliation, affiliation.value.trim());
+    data.append(f.affiliation, affiliation.value.trim());
     data.append(f.role, role.value);
     if (heard.value === "Other") {
       data.append(f.heard, "__other_option__");
