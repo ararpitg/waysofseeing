@@ -1347,10 +1347,14 @@ html.wos-gated body > *:not(.wos-gate) { filter: blur(7px); pointer-events: none
 .wos-gate-card h2 { margin: 0 0 10px; font-size: 26px; border: 0; padding: 0; }
 .wos-gate-card p { margin: 0 0 14px; font-size: 15.5px; line-height: 1.55; }
 .wos-gate-card label { display: block; font-family: var(--font-ui); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); margin: 12px 0 5px; }
-.wos-gate-card input[type="text"], .wos-gate-card input[type="email"], .wos-gate-card select {
+.wos-gate-card input[type="text"], .wos-gate-card input[type="email"], .wos-gate-card select, .wos-gate-card textarea {
   width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; padding: 10px 12px;
   border: 1px solid var(--line); border-radius: 6px; background: var(--off-white); color: var(--ink);
 }
+.wos-gate-card textarea { resize: vertical; }
+.wos-gate-card #wos-gate-heard-other { margin-top: 8px; }
+.wos-gate { align-items: start; }
+.wos-gate-card { margin: auto; }
 .wos-gate-check { display: flex !important; gap: 8px; align-items: flex-start; text-transform: none !important; letter-spacing: 0 !important; font-size: 13.5px !important; color: var(--ink) !important; }
 .wos-gate-check input { margin-top: 3px; }
 .wos-gate-card button[type="submit"] {
