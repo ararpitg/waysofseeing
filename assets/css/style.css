@@ -1125,7 +1125,7 @@ main.wos nav.page-nav a.active {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-soft);
-  width: 64px;
+  width: 96px;
   flex-shrink: 0;
 }
 .wos-chip {

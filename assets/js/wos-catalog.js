@@ -164,7 +164,7 @@
   controls.appendChild(chipGroup("Type", "type", Object.keys(TYPE_LABELS).map(function (k) {
     return { value: k, label: TYPE_LABELS[k] };
   })));
-  controls.appendChild(chipGroup("Path", "path", Object.keys(PATH_LABELS).map(function (k) {
+  controls.appendChild(chipGroup("Through-line", "path", Object.keys(PATH_LABELS).map(function (k) {
     return { value: k, label: PATH_LABELS[k] };
   })));
   controls.appendChild(chipGroup("Region", "region", uniqueRegions()));
@@ -248,7 +248,7 @@
     metaRow(dl, "Format", r.format);
     metaRow(dl, "Language", r.language);
     metaRow(dl, "Coverage", r.coverage || r.region);
-    metaRow(dl, "Paths", (r.paths || []).map(function (p) { return PATH_LABELS[p]; }).join("; "));
+    metaRow(dl, "Through-lines", (r.paths || []).map(function (p) { return PATH_LABELS[p]; }).join("; "));
     metaRow(dl, "Subjects", (r.subjects || []).join("; "));
     metaRow(dl, "Access", ACCESS_LABELS[r.access] || r.access);
     if (r.url) {
