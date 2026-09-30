@@ -10,6 +10,7 @@
     fields: {
       name: "entry.1222533341",
       email: "entry.909839935",
+      affiliation: "entry.1645893105",
       role: "entry.153975085",
       heard: "entry.1980491277",
       comments: "entry.1195898743"
@@ -43,6 +44,11 @@
       '<input id="wos-gate-name" type="text" autocomplete="name" required>' +
       '<label for="wos-gate-email">Email address</label>' +
       '<input id="wos-gate-email" type="email" autocomplete="email" required>' +
+      '<label class="wos-gate-check"><input id="wos-gate-noemail" type="checkbox"> ' +
+      '<span>I don\u2019t have an email address</span></label>' +
+      '<label for="wos-gate-affiliation">Affiliation <span id="wos-gate-aff-hint">(optional)</span></label>' +
+      '<input id="wos-gate-affiliation" type="text" autocomplete="organization" ' +
+      'placeholder="Organisation, institution, village or community">' +
       '<label for="wos-gate-role">Which best describes your role?</label>' +
       '<select id="wos-gate-role" required>' + options(WOS_GATE.roles) + '</select>' +
       '<label for="wos-gate-heard">How did you hear about this archive?</label>' +
@@ -70,6 +76,15 @@
     if (gate.parentNode) gate.parentNode.removeChild(gate);
   }
 
+  // No email: the address is recorded as "NA" and the affiliation becomes required instead
+  gate.addEventListener("change", function (e) {
+    if (e.target.id !== "wos-gate-noemail") return;
+    var email = $("email");
+    email.disabled = e.target.checked;
+    if (e.target.checked) email.value = "";
+    $("aff-hint").textContent = e.target.checked ? "(required)" : "(optional)";
+  });
+
   gate.addEventListener("change", function (e) {
     if (e.target.id !== "wos-gate-heard") return;
     var other = $("heard-other");
@@ -87,8 +102,14 @@
   gate.addEventListener("submit", function (e) {
     e.preventDefault();
     var name = $("name"), email = $("email"), role = $("role"), heard = $("heard"), other = $("heard-other");
+    var noEmail = $("noemail").checked, affiliation = $("affiliation");
     if (!name.value.trim()) return fail("Please enter your name.", name);
-    if (!email.value.trim() || !email.checkValidity()) return fail("Please enter a valid email address.", email);
+    if (!noEmail && (!email.value.trim() || !email.checkValidity())) {
+      return fail("Please enter a valid email address, or tick the box if you don\u2019t have one.", email);
+    }
+    if (noEmail && !affiliation.value.trim()) {
+      return fail("Please tell us your organisation, institution, village or community.", affiliation);
+    }
     if (!role.value) return fail("Please choose the role that fits best.", role);
     if (!heard.value) return fail("Please tell us how you heard about the archive.", heard);
     if (heard.value === "Other" && !other.value.trim()) return fail("Please tell us where you heard about it.", other);
@@ -96,7 +117,8 @@
     var f = WOS_GATE.fields;
     var data = new URLSearchParams();
     data.append(f.name, name.value.trim());
-    data.append(f.email, email.value.trim());
+    data.append(f.email, noEmail ? "NA" : email.value.trim());
+    if (affiliation.value.trim()) data.append(f.affiliation, affiliation.value.trim());
     data.append(f.role, role.value);
     if (heard.value === "Other") {
       data.append(f.heard, "__other_option__");
@@ -115,7 +137,7 @@
   gate.addEventListener("keydown", function (e) {
     if (e.key !== "Tab") return;
     var items = Array.prototype.filter.call(gate.querySelectorAll("input, select, textarea, button"),
-      function (el) { return !el.hidden; });
+      function (el) { return !el.hidden && !el.disabled; });
     var first = items[0], last = items[items.length - 1];
     if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
     else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }

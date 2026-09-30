@@ -1352,6 +1352,9 @@ html.wos-gated body > *:not(.wos-gate) { filter: blur(7px); pointer-events: none
   border: 1px solid var(--line); border-radius: 6px; background: var(--off-white); color: var(--ink);
 }
 .wos-gate-card textarea { resize: vertical; }
+.wos-gate-card input:disabled { opacity: 0.5; }
+.wos-gate-card .wos-gate-check { margin-top: 8px; }
+.wos-gate-card label span[id] { text-transform: none; letter-spacing: 0; }
 .wos-gate-card #wos-gate-heard-other { margin-top: 8px; }
 .wos-gate { align-items: start; }
 .wos-gate-card { margin: auto; }
