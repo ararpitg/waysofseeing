@@ -1407,3 +1407,52 @@ ol.wos-biblio li.is-target { background: color-mix(in srgb, var(--accent) 10%, t
   font-family: var(--font-ui); font-size: 12.5px; letter-spacing: 0.02em; color: var(--dark-soft);
   margin: 18px auto 0; max-width: 560px;
 }
+
+/* ---------- One title block: brand, subtitle, and bubble tabs ---------- */
+.wos-brand { background: var(--dark); text-align: center; padding: 34px 0 6px; }
+.wos-brand--home { padding-top: 64px; }
+.wos-brand-head { margin: 0; font-weight: normal; }
+.wos-brand-head a { border-bottom: none; display: inline-block; }
+.wos-brand-title {
+  display: block; font-family: var(--font-ui); font-weight: 600; color: #fff;
+  font-size: clamp(28px, 3.6vw, 40px); letter-spacing: 0.03em; line-height: 1.1;
+}
+.wos-brand--home .wos-brand-title { font-size: clamp(42px, 6.4vw, 76px); }
+.wos-brand-tag {
+  display: block; margin-top: 8px; font-family: var(--font-ui); font-size: 12px;
+  letter-spacing: 0.24em; text-transform: uppercase; color: var(--dark-soft);
+}
+.wos-brand--home .wos-brand-tag { font-size: 13.5px; margin-top: 12px; }
+.wos-brand-sub {
+  margin: 12px auto 0; font-family: var(--font-ui); font-size: 15px; letter-spacing: 0.04em; color: var(--off-white);
+}
+.wos-brand--home .wos-brand-sub { font-size: clamp(16px, 1.8vw, 20px); margin-top: 18px; }
+
+header.site-header.wos-tabsbar, header.site-header.wos-tabsbar.scrolled { padding: 16px 0 18px; }
+header.site-header.wos-tabsbar.scrolled { padding: 10px 0; }
+.wos-pills > ul { justify-content: center; gap: 10px !important; flex-wrap: wrap; }
+nav.site-nav.wos-pills a {
+  display: inline-block; padding: 9px 18px; border-radius: 999px;
+  font-size: 14px; letter-spacing: 0.03em; text-transform: none;
+  color: var(--off-white); background: rgba(236, 229, 214, 0.07);
+  border: 1px solid rgba(236, 229, 214, 0.28);
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+nav.site-nav.wos-pills a:hover { background: var(--off-white); color: var(--dark); border-color: var(--off-white); transform: translateY(-1px); }
+nav.site-nav.wos-pills a[aria-current="page"] {
+  background: var(--accent); border-color: var(--accent); color: #fff;
+  box-shadow: 0 4px 14px rgba(164, 80, 47, 0.35);
+}
+.wos-masthead--home .wrap { padding-top: 28px; }
+@media (min-width: 1024px) { .wos-pills > ul { flex-wrap: nowrap; } }
+@media (max-width: 760px) {
+  .wos-brand { padding-top: 22px; }
+  .wos-brand--home { padding-top: 36px; }
+  .wos-brand-sub { font-size: 13.5px; padding: 0 16px; }
+  .wos-pills > ul { justify-content: flex-start; gap: 8px !important; }
+  nav.site-nav.wos-pills a { padding: 7px 14px; font-size: 13px; }
+  header.site-header.wos-tabsbar { padding: 12px 0; }
+}
+header.site-header.wos-tabsbar { border: 0; box-shadow: none; }
+header.site-header.wos-tabsbar.scrolled { box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); }
+.wos-masthead--home { border-top: 0; }
