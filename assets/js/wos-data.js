@@ -49,7 +49,7 @@ window.WOS_RECORDS = [
     description: "Follows Chinhari, a collective of Adivasi youth in Dhamtari, centering on young women practicing agriculture and forming care groups within the collective."
   },
   {
-    id: "WOS-004", curator: true, type: "film", title: "Inoculating Lac", creator: "Arpit Gaind (director, producer)",
+    id: "WOS-004", curator: true, type: "film", title: "Inoculating Lac", creator: "Arpit Gaind (cinematographer, editor); produced by the Centre for Development Practice, Ambedkar University Delhi",
     year: "2019", region: "Chhattisgarh", coverage: "Bhanupratappur, Chhattisgarh", format: "Documentary",
     paths: ["nature"], subjects: ["lac cultivation", "forest livelihoods"],
     access: "open", url: "https://www.youtube.com/watch?v=niLY3TEyXpY", urlLabel: "Watch on YouTube",
