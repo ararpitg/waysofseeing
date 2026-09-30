@@ -27,7 +27,7 @@ window.WOS_RECORDS = [
     id: "WOS-001", curator: true, type: "film", title: "Ayangraji", creator: "Arpit Gaind (director, editor)",
     year: "2021", region: "Jharkhand", coverage: "Radidih, Gumla district, Jharkhand", format: "Documentary, 5 min 43 sec",
     paths: ["nature"], subjects: ["alternative agriculture", "rice cultivation", "community-supported markets"],
-    access: "request", url: "https://vimeo.com/848529488", urlLabel: "Watch on Vimeo",
+    access: "open", url: "https://player.mediadelivery.net/play/766686/819a2f23-8325-4ee3-bc69-351f7dbc8e4f", urlLabel: "Watch", bunny: "766686/819a2f23-8325-4ee3-bc69-351f7dbc8e4f",
     thumb: "assets/img/ayangraji-field.jpg",
     description: "An alternative agriculture and rice cultivation initiative in Radidih, following efforts to build community-supported markets and entrepreneurship opportunities for Adivasi people in the region."
   },
@@ -35,7 +35,7 @@ window.WOS_RECORDS = [
     id: "WOS-002", curator: true, type: "film", title: "Envisioning Development Practice", creator: "Arpit Gaind (director, producer, editor)",
     year: "2019", region: "India", coverage: "Odisha, Chhattisgarh, and Jharkhand", format: "Documentary, 6 min 58 sec",
     paths: ["culture", "nature"], subjects: ["development practice", "single women's association", "youth collectives", "organic agriculture"],
-    access: "request", url: "https://vimeo.com/850739103", urlLabel: "Watch on Vimeo",
+    access: "open", url: "https://player.mediadelivery.net/play/766686/1fb7c392-cc66-426f-853d-31f6e8ac0d51", urlLabel: "Watch", bunny: "766686/1fb7c392-cc66-426f-853d-31f6e8ac0d51",
     thumb: "assets/img/film/envisioning-still.jpg",
     description: "Three practices across the Adivasi belt, each built by practitioners who arrived as students and stayed: Eka Nari Sangathan, Chinhari, and organic agriculture at Ayangraji. There is no narration; the speaking belongs to the people in the situation.",
     note: "Made at the Centre for Development Practice, Ambedkar University Delhi, and archived there. The film declines to substitute a result for practices that do not produce one."
@@ -44,7 +44,7 @@ window.WOS_RECORDS = [
     id: "WOS-003", curator: true, type: "film", title: "Chinhari: The Young India", creator: "Arpit Gaind (director, producer)",
     year: "2019", region: "Chhattisgarh", coverage: "Dhamtari, Chhattisgarh", format: "Documentary",
     paths: ["youth"], subjects: ["youth collectives", "care groups", "agriculture"],
-    access: "request", url: "https://vimeo.com/848531462", urlLabel: "Watch on Vimeo",
+    access: "open", url: "https://player.mediadelivery.net/play/766686/48f133bf-c957-4e01-9ac8-a74906084c47", urlLabel: "Watch", bunny: "766686/48f133bf-c957-4e01-9ac8-a74906084c47",
     thumb: "assets/img/film/chinhari-still.jpg",
     description: "Follows Chinhari, a collective of Adivasi youth in Dhamtari, centering on young women practicing agriculture and forming care groups within the collective."
   },

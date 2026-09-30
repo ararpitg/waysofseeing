@@ -141,4 +141,21 @@
       sections.forEach(function (s) { spy.observe(s); });
     }
   }
+
+  /* ---------- Films hosted on Bunny Stream: click a still to play it in place ---------- */
+  document.addEventListener("click", function (e) {
+    var link = e.target.closest ? e.target.closest("a[data-bunny]") : null;
+    if (!link) return;
+    e.preventDefault();
+    var box = document.createElement("div");
+    box.className = "film-embed";
+    var frame = document.createElement("iframe");
+    frame.src = "https://iframe.mediadelivery.net/embed/" + link.getAttribute("data-bunny") +
+      "?autoplay=true&preload=true&responsive=true";
+    frame.title = link.getAttribute("aria-label") || "Film player";
+    frame.setAttribute("allow", "accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen");
+    frame.setAttribute("allowfullscreen", "");
+    box.appendChild(frame);
+    link.parentNode.replaceChild(box, link);
+  });
 })();

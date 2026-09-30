@@ -1327,3 +1327,36 @@ header.site-header.scrolled .wos-byline { display: none; }
 .wos-footer a { color: var(--off-white); }
 .wos-footer-title { color: #fff !important; font-size: 15px !important; letter-spacing: 0.22em; text-transform: uppercase; }
 @media (max-width: 760px) { .wos-wordmark { font-size: 18px; } .wos-byline { font-size: 11px; } }
+
+/* ---------- In-page film player ---------- */
+.film-embed { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: 4px; overflow: hidden; }
+.film-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* ---------- Sign-in gate ---------- */
+html.wos-gated { overflow: hidden; }
+html.wos-gated body > *:not(.wos-gate) { filter: blur(7px); pointer-events: none; user-select: none; }
+.wos-gate {
+  position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 20px;
+  background: rgba(38, 36, 34, 0.72); overflow-y: auto;
+}
+.wos-gate-card {
+  width: 100%; max-width: 460px; background: var(--bg); color: var(--ink); border-radius: 10px;
+  padding: 28px 26px 22px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+.wos-gate-card .wos-eyebrow { color: var(--accent); opacity: 1; margin-bottom: 6px; }
+.wos-gate-card h2 { margin: 0 0 10px; font-size: 26px; border: 0; padding: 0; }
+.wos-gate-card p { margin: 0 0 14px; font-size: 15.5px; line-height: 1.55; }
+.wos-gate-card label { display: block; font-family: var(--font-ui); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); margin: 12px 0 5px; }
+.wos-gate-card input[type="text"], .wos-gate-card input[type="email"], .wos-gate-card select {
+  width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; padding: 10px 12px;
+  border: 1px solid var(--line); border-radius: 6px; background: var(--off-white); color: var(--ink);
+}
+.wos-gate-check { display: flex !important; gap: 8px; align-items: flex-start; text-transform: none !important; letter-spacing: 0 !important; font-size: 13.5px !important; color: var(--ink) !important; }
+.wos-gate-check input { margin-top: 3px; }
+.wos-gate-card button[type="submit"] {
+  width: 100%; margin-top: 18px; font-family: var(--font-ui); font-size: 15px; padding: 12px 16px;
+  border: 0; border-radius: 999px; background: var(--dark); color: var(--off-white); cursor: pointer;
+}
+.wos-gate-card button[type="submit"]:hover { background: var(--accent); }
+.wos-gate-note { font-family: var(--font-ui); font-size: 12px !important; color: var(--ink-soft); margin: 12px 0 0 !important; }
+.wos-gate-error { color: var(--accent); font-family: var(--font-ui); font-size: 13px !important; margin: 8px 0 0 !important; }

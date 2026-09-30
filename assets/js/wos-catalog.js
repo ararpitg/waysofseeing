@@ -202,6 +202,10 @@
       var t = el("a", { class: "wos-thumb", href: r.url, target: "_blank", rel: "noopener",
         "aria-label": (r.urlLabel || "Open") + " " + r.title + " (opens in a new tab)" });
       t.appendChild(el("img", { src: r.thumb, alt: "", loading: "lazy" }));
+      if (r.bunny) {
+        t.setAttribute("data-bunny", r.bunny);
+        t.setAttribute("aria-label", "Play " + r.title);
+      }
       art.appendChild(t);
     }
 
