@@ -1523,3 +1523,16 @@ header.site-header.wos-tabsbar.scrolled { box-shadow: 0 6px 18px rgba(0, 0, 0, 0
 }
 .wos-footer .wos-footer-credit { font-size: 12px !important; opacity: 0.85; }
 @media (max-width: 760px) { .wos-cover-credit { position: static; text-align: center; margin-top: 14px; } }
+
+/* After John Berger (home) and Curator (about) */
+.wos-berger { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.4fr); gap: 32px; align-items: start; }
+.wos-berger-photo { margin: 6px 0 0; }
+.wos-berger-photo img { width: 100%; display: block; border-radius: 6px; filter: grayscale(100%); }
+.wos-berger-photo figcaption { font-family: var(--font-ui, inherit); font-size: 12px; line-height: 1.5; color: var(--ink-soft, #5a544c); margin-top: 8px; }
+.wos-curator { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 28px; align-items: start; }
+.wos-curator img { width: 100%; display: block; border-radius: 6px; }
+@media (max-width: 720px) {
+  .wos-berger { grid-template-columns: 1fr; }
+  .wos-berger-photo { max-width: 320px; }
+  .wos-curator { grid-template-columns: 120px minmax(0, 1fr); gap: 18px; }
+}
