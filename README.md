@@ -1,4 +1,4 @@
-# Ways of Seeing — An Adivasi (Indigenous) Media Archive
+# Ways of Seeing — Adivasi (Indigenous) Media, Archives, and Maps
 
 A static site: plain HTML, CSS, and JavaScript, no build step.
 
