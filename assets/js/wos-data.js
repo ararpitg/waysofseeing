@@ -95,7 +95,7 @@ window.WOS_RECORDS = [
     access: "open", url: "https://akhrasite.wordpress.com/", urlLabel: "Visit",
     thumb: "assets/img/wos/akhra-edit-suite.jpg",
     description: "A Ranchi-based group describing itself as committed persons, mostly Indigenous youth, working in culture, communication, and the human rights of Indigenous (tribal) peoples. It has made more than thirty documentaries, several of them National Film Award winners.",
-    note: "The archive's longest-running point of reference for Adivasi filmmaking in Jharkhand. Its team includes the filmmaker and editor Rupesh Kr Sahu (WOS-106), and ten of its films are held by UCLA Library (WOS-105)."
+    note: "The archive's longest-running point of reference for Adivasi filmmaking in Jharkhand. Its team includes the filmmaker and editor Rupesh Kr Sahu (WOS-106), and twelve of its films are held by UCLA Library (WOS-105)."
   },
   {
     id: "WOS-011", type: "collective", title: "Jharkhandi Bhasha Sahitya Sanskriti Akhra", creator: "Vandna Tete (founder)",
@@ -785,7 +785,7 @@ window.WOS_RECORDS = [
     id: "WOS-105", type: "library", title: "AKHRA films at UCLA Library", creator: "UCLA Library",
     region: "Global", coverage: "Los Angeles", paths: ["archives"], subjects: ["AKHRA", "film collection", "library holdings"],
     access: "institutional", url: "https://search.library.ucla.edu/discovery/search?query=any,contains,Akhra%20Ranchi&vid=01UCS_LAL:UCLA", urlLabel: "Search UCLA Library",
-    description: "UCLA Library catalogues ten films by the AKHRA collective, from Development Flows from the Barrel of the Gun (2003) and Kora Rajee (2005) to Rat Trap and Sohrai (2022), available to the university's students and researchers.",
+    description: "UCLA Library catalogues twelve films by the AKHRA collective, from Development Flows from the Barrel of the Gun (2003) and Kora Rajee (2005) to Rat Trap and Sohrai (2022), available to the university's students and researchers.",
     note: "A collective's work described under a university library's standards. What that means for custody is one of the questions the First Principles take up."
   },
   {
