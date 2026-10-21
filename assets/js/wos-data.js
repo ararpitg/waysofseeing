@@ -785,7 +785,7 @@ window.WOS_RECORDS = [
     id: "WOS-105", type: "library", title: "AKHRA films at UCLA Library", creator: "UCLA Library",
     region: "Global", coverage: "Los Angeles", paths: ["archives"], subjects: ["AKHRA", "film collection", "library holdings"],
     access: "institutional", url: "https://search.library.ucla.edu/discovery/search?query=any,contains,Akhra%20Ranchi&vid=01UCS_LAL:UCLA", urlLabel: "Search UCLA Library",
-    description: "UCLA Library catalogues twelve films by the AKHRA collective, from Development Flows from the Barrel of the Gun (2003) and Kora Rajee (2005) to Rat Trap and Sohrai (2022), available to the university's students and researchers.",
+    description: "UCLA Library holds twelve films by the AKHRA collective, from Development Flows from the Barrel of the Gun (2003) and Kora Rajee (2005) to Rat Trap and Sohrai (2022), available to the university's students and researchers.",
     note: "A collective's work described under a university library's standards. What that means for custody is one of the questions the First Principles take up."
   },
   {
