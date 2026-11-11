@@ -1602,3 +1602,21 @@ header.site-header.wos-tabsbar.scrolled { box-shadow: 0 6px 18px rgba(0, 0, 0, 0
   .wos-member { grid-template-columns: 56px minmax(0, 1fr); gap: 14px; }
   .wos-member-mark, .wos-member img { width: 56px; height: 56px; font-size: 0.9rem; }
 }
+
+/* Counter-Mapping: documentary regions (Akhra films at district level) */
+.cm-regions { margin: 18px 0 8px; }
+.cm-regions h3 { font-family: var(--font-ui); font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); margin: 22px 0 8px; }
+.cm-region-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+.cm-region { border: 1px solid var(--line); border-top: 4px solid var(--rc, var(--accent)); border-radius: 10px; padding: 12px 14px; background: color-mix(in srgb, var(--rc, var(--accent)) 6%, transparent); }
+.cm-region h4 { margin: 0 0 6px; font-family: var(--font-ui); font-size: 16px; color: var(--rc, var(--accent)); }
+.cm-region p { margin: 0 0 6px; font-size: 14.5px; line-height: 1.5; }
+.cm-btn-small { font-size: 12px; padding: 4px 10px; margin: 4px 0 6px; }
+.cm-films { list-style: none; padding: 0; margin: 6px 0 0; font-family: var(--font-ui); font-size: 13.5px; line-height: 1.45; }
+.cm-films li { padding: 5px 0; border-top: 1px solid color-mix(in srgb, var(--line) 60%, transparent); }
+.cm-films a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); }
+.cm-film-meta { display: block; font-family: var(--font-ui); font-size: 12px; color: var(--ink-soft); }
+.cm-film-right { display: block; font-size: 12.5px; color: var(--ink-soft); font-style: italic; }
+.cm-prov { font-family: var(--font-ui); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); border: 1px dashed var(--ink-soft); border-radius: 4px; padding: 0 5px; vertical-align: middle; }
+.cm-legend-note { font-size: 11px; color: var(--ink-soft); margin-top: 4px; }
+.cm-btn[disabled] { opacity: 0.5; cursor: default; }
+.cm-info .cm-films { max-height: 220px; overflow: auto; }

@@ -118,17 +118,20 @@
     <p>
       A map built only from official, public figures, read against itself. Each district shows its Scheduled Tribe
       population (Census 2011) or its forest cover (Forest Survey of India, 2023); the outline marks districts that
-      are Scheduled Areas under the Fifth Schedule. Click a district for its figures.
+      are Scheduled Areas under the Fifth Schedule. Click a district for its figures. Switch on
+      <em>Documentary regions</em> to see where Akhra&rsquo;s films have gone, at the same district scale.
     </p>
     <div class="cm-controls" role="group" aria-label="Map layers">
       <button type="button" class="cm-btn" data-cm-layer="st" aria-pressed="true">Scheduled Tribe share</button>
       <button type="button" class="cm-btn" data-cm-layer="forest" aria-pressed="false">Forest cover</button>
       <button type="button" class="cm-btn" data-cm-layer="scheduled" aria-pressed="false">Fifth Schedule areas</button>
+      <button type="button" class="cm-btn" data-cm-layer="films" aria-pressed="false" disabled>Documentary regions</button>
     </div>
     <div class="cm-map-wrap">
-      <div id="cm-map" class="cm-map" data-src="assets/data/jharkhand-districts.geojson" role="region" aria-label="Interactive map of Jharkhand's districts"></div>
+      <div id="cm-map" class="cm-map" data-src="assets/data/jharkhand-districts.geojson" data-films="assets/data/akhra-films.json" role="region" aria-label="Interactive map of Jharkhand's districts"></div>
       <p id="cm-info" class="cm-info" aria-live="polite">Click a district.</p>
     </div>
+    <div id="cm-regions" class="cm-regions" hidden></div>
     <p>
       Read together, the layers show how the state&rsquo;s own categories line up. Every one of the thirteen
       districts where Scheduled Tribes make up more than about a quarter of the population is fully a Scheduled

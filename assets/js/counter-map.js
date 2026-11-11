@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
       rows.push('<span><i style="background:' + cfg.colors[i] + '"></i>' + (hi === undefined ? lo + "%+" : lo + "–" + hi + "%") + "</span>");
     }
     this._div.innerHTML = "<strong>" + cfg.label + "</strong>" + rows.join("") +
-      (scheduledLayer && map.hasLayer(scheduledLayer) ? '<span><i class="cm-hatch"></i>Fifth Schedule area</span>' : "");
+      (scheduledLayer && map.hasLayer(scheduledLayer) ? '<span><i class="cm-hatch"></i>Fifth Schedule area</span>' : "") + regionLegend();
   };
 
   function render() {
@@ -93,6 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }).addTo(map);
     if (scheduledLayer && map.hasLayer(scheduledLayer)) scheduledLayer.bringToFront();
+    if (regionLayer && regionsOn) regionLayer.bringToFront();
     legend.update();
   }
 
@@ -117,6 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("[data-cm-layer]").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var key = btn.getAttribute("data-cm-layer");
+      if (key === "films") return; /* handled by the documentary-regions toggle below */
       if (key === "scheduled") {
         var on = !map.hasLayer(scheduledLayer);
         if (on) scheduledLayer.addTo(map); else map.removeLayer(scheduledLayer);
@@ -132,6 +134,118 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+
+  /* Documentary regions: where Akhra's films have gone, at district level.
+     Reads assets/data/akhra-films.json, generated from the Akhra film dataset by _tools/build-films-json.py.
+     A region is a set of districts named in the films themselves; nothing finer is located. Regions whose
+     districts are still to be confirmed against the films are drawn dashed and labelled provisional. */
+  /* Kept away from the choropleth's rusts and greens so a region never reads as a high value. */
+  var REGION_COLORS = { R1: "#2f5f8a", R2: "#1f7a7a", R3: "#6a4f7a", R4: "#4a5e6a", R5: "#8a2f5f", R6: "#7a6a2f", R7: "#556b2f" };
+  var films = null, regionLayer = null, regionsOn = false, byDistrict = {};
+  var regionList = document.getElementById("cm-regions");
+
+  function esc(t) { return String(t == null ? "" : t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+  function filmLine(f) {
+    var t = "<em>" + esc(f.title) + "</em>" + (f.english ? " (" + esc(f.english) + ")" : "") + (f.year ? ", " + esc(f.year) : "");
+    if (f.url) t = '<a href="' + esc(f.url) + '">' + t + "</a>";
+    var meta = [f.phase, f.districts && f.districts.length ? f.districts.join(", ") : null, f.provisional ? "provisional" : null].filter(Boolean).join(" · ");
+    return "<li>" + t + (meta ? ' <span class="cm-film-meta">' + esc(meta) + "</span>" : "") +
+      (f.right ? '<span class="cm-film-right">' + esc(f.right) + "</span>" : "") + "</li>";
+  }
+
+  function regionFilms(g) { return films.films.filter(function (f) { return f.region === g.code; }); }
+
+  function showRegion(g) {
+    if (!info) return;
+    var where = g.districts.length ? g.districts.join(", ") : "beyond the frame of this map";
+    info.innerHTML = '<strong style="color:' + REGION_COLORS[g.code] + '">' + esc(g.code + " · " + g.name) + "</strong>" +
+      (g.provisional ? ' <span class="cm-prov">provisional</span>' : "") + "<br>" + esc(g.maps) + "<br>" +
+      "<span class=\"cm-film-meta\">District level: " + esc(where) + ".</span>" +
+      '<ul class="cm-films">' + regionFilms(g).map(filmLine).join("") + "</ul>";
+  }
+
+  function buildRegionLayer() {
+    byDistrict = {};
+    films.regions.forEach(function (g) {
+      g.districts.forEach(function (d) { (byDistrict[d] = byDistrict[d] || []).push(g); });
+    });
+    regionLayer = L.geoJSON(data, {
+      filter: function (f) { return !!byDistrict[f.properties.name]; },
+      style: function (f) {
+        var g = byDistrict[f.properties.name][0], c = REGION_COLORS[g.code];
+        return { fillColor: c, fillOpacity: 0.42, color: c, weight: 2.4, opacity: 1, dashArray: g.provisional ? "6 5" : null };
+      },
+      onEachFeature: function (f, layer) {
+        var gs = byDistrict[f.properties.name];
+        layer.bindTooltip(gs.map(function (g) { return g.name; }).join(" / ") + " · " + f.properties.name, { sticky: true, className: "cm-tip" });
+        layer.on("click", function (e) { L.DomEvent.stop(e); showRegion(gs[0]); });
+        layer.on("keypress", function (e) { if (e.originalEvent.key === "Enter") showRegion(gs[0]); });
+      }
+    });
+  }
+
+  function regionLegend() {
+    if (!regionsOn || !films) return "";
+    return films.regions.filter(function (g) { return g.districts.length; }).map(function (g) {
+      return '<span><i style="background:' + REGION_COLORS[g.code] + ';border:2px ' + (g.provisional ? "dashed" : "solid") + " " + REGION_COLORS[g.code] + '"></i>' + esc(g.name) + (g.provisional ? " (provisional)" : "") + "</span>";
+    }).join("") + '<span class="cm-legend-note">Dashed: districts still to be confirmed from the films.</span>';
+  }
+
+  function renderRegionList() {
+    if (!regionList || !films) return;
+    var onMap = films.regions.filter(function (g) { return g.districts.length; });
+    var beyond = films.regions.filter(function (g) { return !g.districts.length; });
+    var unplaced = films.films.filter(function (f) { return !f.region; });
+    function card(g) {
+      return '<article class="cm-region" style="--rc:' + REGION_COLORS[g.code] + '">' +
+        "<h4>" + esc(g.code) + " · " + esc(g.name) + (g.provisional ? ' <span class="cm-prov">provisional</span>' : "") + "</h4>" +
+        "<p>" + esc(g.maps) + "</p>" +
+        '<p class="cm-film-meta">' + esc(g.districts.length ? "Districts: " + g.districts.join(", ") : g.districts_note) + " · " + esc(g.status) + "</p>" +
+        (g.districts.length ? '<button type="button" class="cm-btn cm-btn-small" data-cm-region="' + esc(g.code) + '">Show on map</button>' : "") +
+        '<ul class="cm-films">' + regionFilms(g).map(filmLine).join("") + "</ul></article>";
+    }
+    regionList.innerHTML =
+      "<h3>On the map</h3><div class=\"cm-region-grid\">" + onMap.map(card).join("") + "</div>" +
+      "<h3>Beyond the frame</h3><p class=\"cm-film-meta\">Regions the Jharkhand map cannot hold, or whose districts are not yet confirmed. They are listed, not drawn.</p>" +
+      '<div class="cm-region-grid">' + beyond.map(card).join("") + "</div>" +
+      (unplaced.length ? '<h3>Not yet placed</h3><ul class="cm-films">' + unplaced.map(filmLine).join("") + "</ul>" : "") +
+      '<p class="cm-sources-inline">Regions and films: Akhra film dataset v1 (' + esc(films.generated) + "), built from the dissertation filmography and the archive’s catalog records. " + esc(films.note) + "</p>";
+    regionList.hidden = false;
+    regionList.querySelectorAll("[data-cm-region]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var g = films.regions.filter(function (x) { return x.code === b.getAttribute("data-cm-region"); })[0];
+        if (!regionsOn) toggleRegions(true);
+        showRegion(g);
+        el.scrollIntoView({ behavior: "smooth", block: "center" });
+      });
+    });
+  }
+
+  function toggleRegions(on) {
+    regionsOn = on;
+    var btn = document.querySelector('[data-cm-layer="films"]');
+    if (btn) btn.setAttribute("aria-pressed", String(on));
+    if (!regionLayer) return;
+    if (on) { regionLayer.addTo(map); regionLayer.bringToFront(); if (info) info.innerHTML = "Click a region for its films."; }
+    else { map.removeLayer(regionLayer); if (info) info.innerHTML = "Click a district."; }
+    legend.update();
+  }
+
+  var filmsBtn = document.querySelector('[data-cm-layer="films"]');
+  if (filmsBtn) filmsBtn.addEventListener("click", function () { toggleRegions(!regionsOn); });
+
+  function loadFilms() {
+    var src = el.getAttribute("data-films");
+    if (!src) return;
+    fetch(src).then(function (r) { return r.json(); }).then(function (json) {
+      films = json;
+      buildRegionLayer();
+      renderRegionList();
+      if (filmsBtn) filmsBtn.disabled = false;
+    }).catch(function () { if (filmsBtn) filmsBtn.disabled = true; });
+  }
+
   fetch(el.getAttribute("data-src"))
     .then(function (r) { return r.json(); })
     .then(function (json) {
@@ -140,6 +254,7 @@ document.addEventListener("DOMContentLoaded", function () {
       buildScheduled();
       render();
       fit();
+      loadFilms();
       /* The page fades sections in, so the map may first be measured at the wrong size */
       if (window.ResizeObserver) new ResizeObserver(fit).observe(el);
       else window.addEventListener("resize", fit);
