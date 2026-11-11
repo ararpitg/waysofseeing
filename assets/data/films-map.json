@@ -1,0 +1,808 @@
+{
+ "generated": "2026-11-11",
+ "note": "District level only. A film resolves to a district only where the film or its catalog record names the place; 'provisional' marks a district the author infers and has not yet confirmed from the film. Off-map films are listed, not drawn. Extras are films not yet in the catalog.",
+ "groups": {
+  "akhra": "AKHRA, Ranchi",
+  "kritika": "Shriprakash / Kritika",
+  "curator": "Curator's own films",
+  "other": "Other makers"
+ },
+ "films": [
+  {
+   "id": "WOS-001",
+   "title": "Ayangraji",
+   "year": "2021",
+   "creator": "Arpit Gaind (director, editor)",
+   "description": "An alternative agriculture and rice cultivation initiative in Radidih, following efforts to build community-supported markets and entrepreneurship opportunities for Adivasi people in the region.",
+   "thumb": "assets/img/ayangraji-field.jpg",
+   "access": "open",
+   "url": "https://player.mediadelivery.net/play/766686/819a2f23-8325-4ee3-bc69-351f7dbc8e4f",
+   "urlLabel": "Watch",
+   "catalog": "catalog.html#WOS-001",
+   "group": "curator",
+   "districts": [
+    "Gumla"
+   ],
+   "provisional": false,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "WOS-002",
+   "title": "Envisioning Development Practice",
+   "year": "2019",
+   "creator": "Arpit Gaind (director, producer, editor)",
+   "description": "Three practices across the Adivasi belt, each built by practitioners who arrived as students and stayed: Eka Nari Sangathan, Chinhari, and organic agriculture at Ayangraji. There is no narration; the speaking belongs to the people in the situation.",
+   "thumb": "assets/img/film/envisioning-still.jpg",
+   "access": "open",
+   "url": "https://player.mediadelivery.net/play/766686/1fb7c392-cc66-426f-853d-31f6e8ac0d51",
+   "urlLabel": "Watch",
+   "catalog": "catalog.html#WOS-002",
+   "group": "curator",
+   "districts": [
+    "Gumla"
+   ],
+   "provisional": false,
+   "movement": null,
+   "beyond": "Rayagada (Odisha), Dhamtari (Chhattisgarh)"
+  },
+  {
+   "id": "WOS-003",
+   "title": "Chinhari: The Young India",
+   "year": "2019",
+   "creator": "Arpit Gaind (director, producer)",
+   "description": "Follows Chinhari, a collective of Adivasi youth in Dhamtari, centering on young women practicing agriculture and forming care groups within the collective.",
+   "thumb": "assets/img/film/chinhari-still.jpg",
+   "access": "open",
+   "url": "https://player.mediadelivery.net/play/766686/48f133bf-c957-4e01-9ac8-a74906084c47",
+   "urlLabel": "Watch",
+   "catalog": "catalog.html#WOS-003",
+   "group": "curator",
+   "districts": [],
+   "provisional": false,
+   "movement": null,
+   "beyond": "Dhamtari, Chhattisgarh"
+  },
+  {
+   "id": "WOS-004",
+   "title": "Inoculating Lac",
+   "year": "2019",
+   "creator": "Arpit Gaind (cinematographer, editor); produced by the Centre for Development Practice, Ambedkar University Delhi",
+   "description": "Lac cultivation and livelihoods in Bhanupratappur, following the inoculation process at the center of the region's lac economy.",
+   "thumb": "assets/img/film/inoculating-lac-still.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=niLY3TEyXpY",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-004",
+   "group": "curator",
+   "districts": [],
+   "provisional": false,
+   "movement": null,
+   "beyond": "Bhanupratappur, Chhattisgarh"
+  },
+  {
+   "id": "WOS-020",
+   "title": "Jaha Chhiti Ladi Hathi Se",
+   "year": "1996",
+   "creator": "AKHRA",
+   "description": "About Indigenous peoples' struggle against bauxite mining. Full film on AKHRA's official channel.",
+   "thumb": "https://img.youtube.com/vi/19EEEfYeiHI/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=19EEEfYeiHI",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-020",
+   "group": "akhra",
+   "districts": [
+    "Gumla",
+    "Lohardaga"
+   ],
+   "provisional": true,
+   "movement": "bauxite",
+   "beyond": null
+  },
+  {
+   "id": "WOS-021",
+   "title": "Ek Hadsa Aur Bhi (Yet Another Accident)",
+   "year": "1996",
+   "creator": "AKHRA; credited to Biju Toppo and Sunil Minj",
+   "description": "On the Kutku-Mandal Dam incident in Palamu, when a closed sluice gate flooded some thirty-two villages. Full film on AKHRA's official channel.",
+   "thumb": "https://img.youtube.com/vi/YQhEWWDfTaw/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=YQhEWWDfTaw",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-021",
+   "group": "akhra",
+   "districts": [
+    "Palamu"
+   ],
+   "provisional": false,
+   "movement": "kutku",
+   "beyond": null
+  },
+  {
+   "id": "WOS-022",
+   "title": "Development Flows from the Barrel of the Gun (Vikas Bandook Ki Nal Se)",
+   "year": "2003",
+   "creator": "Biju Toppo and Meghnath (AKHRA)",
+   "description": "About the violation of Indigenous people's human rights through development projects, following resistance at Kashipur, Koel Karo, Nagarnar, and elsewhere. Awarded at Film South Asia 2004 and Vatavaran 2005. A German version was also made. No public stream; available to researchers through UCLA Library, or on request from AKHRA.",
+   "thumb": null,
+   "access": "institutional",
+   "url": "https://search.library.ucla.edu/discovery/fulldisplay?docid=alma9997174355606533&vid=01UCS_LAL:UCLA",
+   "urlLabel": "UCLA Library record",
+   "catalog": "catalog.html#WOS-022",
+   "group": "akhra",
+   "districts": [
+    "Khunti"
+   ],
+   "provisional": false,
+   "movement": "koelkaro",
+   "beyond": "Kashipur (Odisha), Nagarnar (Chhattisgarh)"
+  },
+  {
+   "id": "WOS-023",
+   "title": "Accumulated Injustice",
+   "year": "2015",
+   "creator": "AKHRA, with Adivasi-Koordination in Germany",
+   "description": "Adivasi people's living conditions on the dark side of the Rourkela Steel Plant. Full film on AKHRA's official channel.",
+   "thumb": "https://img.youtube.com/vi/CpbIsrjDZuM/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=CpbIsrjDZuM",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-023",
+   "group": "akhra",
+   "districts": [],
+   "provisional": false,
+   "movement": null,
+   "beyond": "Rourkela, Sundargarh district, Odisha"
+  },
+  {
+   "id": "WOS-024",
+   "title": "Naachi Se Baanchi",
+   "year": "2017",
+   "creator": "Biju Toppo and Meghnath (AKHRA); produced by Films Division",
+   "description": "On the life and work of Dr. Ramdayal Munda, a leading Adivasi intellectual of the Jharkhand movement. Rajat Kamal, 65th National Film Awards. Only an excerpt is public.",
+   "thumb": "https://img.youtube.com/vi/gApeIh0UZho/hqdefault.jpg",
+   "access": "request",
+   "url": "https://www.youtube.com/watch?v=gApeIh0UZho",
+   "urlLabel": "Watch an excerpt",
+   "catalog": "catalog.html#WOS-024",
+   "group": "akhra",
+   "districts": [
+    "Ranchi"
+   ],
+   "provisional": true,
+   "movement": "statehood",
+   "beyond": null
+  },
+  {
+   "id": "WOS-025",
+   "title": "We Do Not Need Dust of Development",
+   "year": "2021",
+   "creator": "Biju Toppo and Meghnath (AKHRA)",
+   "description": "A debate on how environmental and public development might reach “the last person of the village” after mineral exploitation. Full film on AKHRA's official channel.",
+   "thumb": "https://img.youtube.com/vi/e__ekkbD05E/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=e__ekkbD05E",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-025",
+   "group": "akhra",
+   "districts": [],
+   "provisional": true,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "WOS-026",
+   "title": "Jaadui Machchi",
+   "year": "2013",
+   "creator": "Ektara Collective",
+   "description": "A Hindi short by Ektara Collective. Full film on Ektara's official channel.",
+   "thumb": "https://img.youtube.com/vi/npqA_R0CWL8/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=npqA_R0CWL8",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-026",
+   "group": "other",
+   "districts": [],
+   "provisional": false,
+   "movement": null,
+   "beyond": "Madhya Pradesh"
+  },
+  {
+   "id": "WOS-027",
+   "title": "Turup (Checkmate)",
+   "year": "2017",
+   "creator": "Ektara Collective",
+   "description": "A neighbourhood chess game becomes a way into caste, class, religion, and gender through three women's lives, against rising fundamentalism. Premiered at the 19th Jio MAMI Mumbai Film Festival.",
+   "thumb": "https://img.youtube.com/vi/DrodWC2pkBo/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=DrodWC2pkBo",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-027",
+   "group": "other",
+   "districts": [],
+   "provisional": false,
+   "movement": null,
+   "beyond": "Bhopal, Madhya Pradesh"
+  },
+  {
+   "id": "WOS-068",
+   "title": "Gram Sabha ki Kahani: A Local Democracy Narrative Exercise",
+   "year": null,
+   "creator": "Akhra Ranchi, for Gram Swashasan Abhiyan; Centre for Local Democracy, Azim Premji University",
+   "description": "Short films and podcasts from villages in Jharkhand on how Gram Sabhas work in practice: forest rights at Baranga Munda Tola, women's participation, youth leadership, drinking water and the COVID response.",
+   "thumb": null,
+   "access": "open",
+   "url": "https://azimpremjiuniversity.edu.in/gram-sabha-ki-kahani",
+   "urlLabel": "Watch and listen",
+   "catalog": "catalog.html#WOS-068",
+   "group": "akhra",
+   "districts": [
+    "Gumla",
+    "Pashchimi Singhbhum (West Singhbhum)"
+   ],
+   "provisional": false,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "WOS-069",
+   "title": "Ek Ropa Dhaan",
+   "year": "2009",
+   "creator": "Meghnath Bhattacharya and Biju Toppo, for PRADAN",
+   "description": "A film on the System of Rice Intensification (SRI) for paddy cultivation, made for PRADAN with support from the Aga Khan Foundation and the European Union. The English version is also on PRADAN's channel.",
+   "thumb": "https://img.youtube.com/vi/INLFfCqz6NQ/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=INLFfCqz6NQ",
+   "urlLabel": "Watch on YouTube (Hindi)",
+   "catalog": "catalog.html#WOS-069",
+   "group": "akhra",
+   "districts": [],
+   "provisional": true,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "WOS-073",
+   "title": "In Search of Ajantrik",
+   "year": "2023",
+   "creator": "Meghnath",
+   "description": "A filmmaker returns to the Jharkhand locations of Ritwik Ghatak's Ajantrik to ask why Ghatak chose the region and how the film pictured Adivasi life. International premiere at the Kolkata People's Film Festival.",
+   "thumb": null,
+   "access": "request",
+   "url": "https://www.ourcinema.in/festival/film/in-search-of-ajantrik/",
+   "urlLabel": "Festival listing",
+   "catalog": "catalog.html#WOS-073",
+   "group": "akhra",
+   "districts": [
+    "Ranchi"
+   ],
+   "provisional": true,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "WOS-074",
+   "title": "Lac Ke Hazar Rang",
+   "year": "2008",
+   "creator": "PRADAN",
+   "description": "A film on promoting lac cultivation and developing lac as a sector. The English version is titled Lacquered Dreams.",
+   "thumb": "https://img.youtube.com/vi/yJR5JqgCJwE/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=yJR5JqgCJwE",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-074",
+   "group": "other",
+   "districts": [],
+   "provisional": true,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "WOS-086",
+   "title": "Guftagoo with Ranendra",
+   "year": null,
+   "creator": "Sansad TV (Guftagoo series)",
+   "description": "An episode of the interview series Guftagoo with Ranendra, novelist and former director of the Tribal Welfare Research Institute in Ranchi, published on Sansad TV's channel.",
+   "thumb": "https://img.youtube.com/vi/FNxv1Pq-Ah0/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=FNxv1Pq-Ah0",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-086",
+   "group": "other",
+   "districts": [
+    "Ranchi"
+   ],
+   "provisional": true,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "WOS-106",
+   "title": "Rat Trap",
+   "year": "2022",
+   "creator": "Rupesh Kr Sahu (script, editing, direction); produced by Meghnath and Biju Toppo, AKHRA",
+   "description": "The daily lives of rat-hole coal miners in Jharkhand, who risk their lives for a livelihood, whose accidents often go unreported, and who, when a mine collapses, cannot openly claim the bodies of those they lose.",
+   "thumb": null,
+   "access": "institutional",
+   "url": "https://search.library.ucla.edu/discovery/fulldisplay?docid=alma9997220068906533&vid=01UCS_LAL:UCLA",
+   "urlLabel": "UCLA Library record",
+   "catalog": "catalog.html#WOS-106",
+   "group": "akhra",
+   "districts": [],
+   "provisional": true,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "WOS-107",
+   "title": "Kora Rajee",
+   "year": "2005",
+   "creator": "Biju Toppo (director); Meghnath (producer), AKHRA",
+   "description": "A documentary on the struggles of migrants from Jharkhand working in the tea gardens of North Bengal and Assam.",
+   "thumb": null,
+   "access": "institutional",
+   "url": "https://search.library.ucla.edu/discovery/fulldisplay?docid=alma9997174355306533&vid=01UCS_LAL:UCLA",
+   "urlLabel": "UCLA Library record",
+   "catalog": "catalog.html#WOS-107",
+   "group": "akhra",
+   "districts": [],
+   "provisional": false,
+   "movement": null,
+   "beyond": "Tea gardens of North Bengal and Assam"
+  },
+  {
+   "id": "WOS-108",
+   "title": "Loha Garam Hai (Iron Is Hot)",
+   "year": "2007",
+   "creator": "Biju Toppo and Meghnath, AKHRA",
+   "description": "The lives of people surviving alongside the sponge iron industry in Jharkhand, and its effects on air, health, and land.",
+   "thumb": null,
+   "access": "institutional",
+   "url": "https://search.library.ucla.edu/discovery/fulldisplay?docid=alma9997174355806533&vid=01UCS_LAL:UCLA",
+   "urlLabel": "UCLA Library record",
+   "catalog": "catalog.html#WOS-108",
+   "group": "akhra",
+   "districts": [
+    "Saraikela-Kharsawan",
+    "Pashchimi Singhbhum (West Singhbhum)"
+   ],
+   "provisional": true,
+   "movement": "spongeiron",
+   "beyond": null
+  },
+  {
+   "id": "WOS-109",
+   "title": "Gadi Lohardaga Mail",
+   "year": "2005",
+   "creator": "Biju Toppo and Meghnath, AKHRA",
+   "description": "Nostalgic Nagpuri folk songs performed on the narrow-gauge Lohardaga passenger train, sketching the social life of the district it ran through. Catalogued at UCLA under the title Gari Lohardaga Mela.",
+   "thumb": null,
+   "access": "institutional",
+   "url": "https://search.library.ucla.edu/discovery/fulldisplay?docid=alma9997174355706533&vid=01UCS_LAL:UCLA",
+   "urlLabel": "UCLA Library record",
+   "catalog": "catalog.html#WOS-109",
+   "group": "akhra",
+   "districts": [
+    "Lohardaga",
+    "Ranchi"
+   ],
+   "provisional": false,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "WOS-110",
+   "title": "Sohrai",
+   "year": "2022",
+   "creator": "Biju Toppo and Meghnath, AKHRA; produced for the Dr. Ramdayal Munda Tribal Welfare Research Institute",
+   "description": "The Santhal festival of Sohrai, celebrated in Kartik, and the place of cattle in the shift from foraging to agriculture.",
+   "thumb": null,
+   "access": "institutional",
+   "url": "https://search.library.ucla.edu/discovery/fulldisplay?docid=alma9997220058806533&vid=01UCS_LAL:UCLA",
+   "urlLabel": "UCLA Library record",
+   "catalog": "catalog.html#WOS-110",
+   "group": "akhra",
+   "districts": [],
+   "provisional": true,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "WOS-111",
+   "title": "Karama",
+   "year": null,
+   "creator": "Biju Toppo (director), AKHRA",
+   "description": "Karam, one of Jharkhand's major festivals, in which nature is worshipped for a good harvest and for the wellbeing of people and animals.",
+   "thumb": null,
+   "access": "institutional",
+   "url": "https://search.library.ucla.edu/discovery/fulldisplay?docid=alma9997220077906533&vid=01UCS_LAL:UCLA",
+   "urlLabel": "UCLA Library record",
+   "catalog": "catalog.html#WOS-111",
+   "group": "akhra",
+   "districts": [],
+   "provisional": true,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "WOS-112",
+   "title": "Srishtikatha: Stories of Creation",
+   "year": null,
+   "creator": "AKHRA; stories told by Ramdayal Munda; animation and direction by Tuhin Paul; produced by Meghnath",
+   "description": "Animated Munda creation stories, the creation of the earth and of day and night by Singbonga, as told by Ramdayal Munda, made so that children can hear the stories their elders once told.",
+   "thumb": null,
+   "access": "institutional",
+   "url": "https://search.library.ucla.edu/discovery/fulldisplay?docid=alma9997220082106533&vid=01UCS_LAL:UCLA",
+   "urlLabel": "UCLA Library record",
+   "catalog": "catalog.html#WOS-112",
+   "group": "akhra",
+   "districts": [],
+   "provisional": true,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "WOS-114",
+   "title": "Eka Nari Sangathan",
+   "year": "2019",
+   "creator": "Arpit Gaind (editor, producer), with Bhavya Chitranshi, Ashutosh Kumar, and Eka Nari Sangathan",
+   "description": "On Eka Nari Sangathan, a single women's association begun by Bhavya Chitranshi and the women of the sangathan. More than an economic self-help group, it is a space where women named “single” for one reason or another share work, labour, and belonging, and shape identities and futures of their own: their aspirations, anxieties, community, and solidarity with one another.",
+   "thumb": "assets/img/film/eka-nari-sangathan-still.jpg",
+   "access": "open",
+   "url": "https://player.mediadelivery.net/play/766686/13eb8fc7-2a8b-4351-9136-fd841becc3f2",
+   "urlLabel": "Watch",
+   "catalog": "catalog.html#WOS-114",
+   "group": "curator",
+   "districts": [],
+   "provisional": false,
+   "movement": null,
+   "beyond": "Rayagada district, Odisha"
+  },
+  {
+   "id": "WOS-116",
+   "title": "Addo Miyad Ulgulan (Another Revolt / Ek aur Ulgulan)",
+   "year": "1995",
+   "creator": "Shriprakash, Kritika",
+   "description": "On Adivasi opposition to the Koel Karo hydroelectric project in Jharkhand. The uploaded version adds four minutes of footage of the 2001 killings.",
+   "thumb": "https://img.youtube.com/vi/x9eE1dBitmM/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=x9eE1dBitmM",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-116",
+   "group": "kritika",
+   "districts": [
+    "Khunti",
+    "Ranchi"
+   ],
+   "provisional": false,
+   "movement": "koelkaro",
+   "beyond": null
+  },
+  {
+   "id": "WOS-117",
+   "title": "Buddha Weeps in Jadugoda (Ragi: Kana: Ko Bonga Buru)",
+   "year": "1999",
+   "creator": "Shriprakash, Kritika",
+   "description": "On the harm to Adivasi health and land from uranium mining and tailings by the Uranium Corporation of India at Jadugoda. It won the Grand Prize at the Earth Vision Tokyo Global Environmental Film Festival.",
+   "thumb": "https://img.youtube.com/vi/FxO_LlHaYvs/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=FxO_LlHaYvs",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-117",
+   "group": "kritika",
+   "districts": [
+    "Purbi Singhbhum (East Singhbhum)"
+   ],
+   "provisional": false,
+   "movement": "jadugoda",
+   "beyond": null
+  },
+  {
+   "id": "WOS-118",
+   "title": "Buru Sengal (The Fire Within)",
+   "year": "2002",
+   "creator": "Shriprakash, Kritika",
+   "description": "A documentary by Shriprakash; only a five-minute excerpt is public, on the Kritika channel.",
+   "thumb": "https://img.youtube.com/vi/ms-kzxoYUyM/hqdefault.jpg",
+   "access": "request",
+   "url": "https://www.youtube.com/watch?v=ms-kzxoYUyM",
+   "urlLabel": "Watch an excerpt",
+   "catalog": "catalog.html#WOS-118",
+   "group": "kritika",
+   "districts": [],
+   "provisional": true,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "WOS-119",
+   "title": "Buru Gaara (Pahari Nadi)",
+   "year": "2008",
+   "creator": "Shriprakash; produced by PSBT with Doordarshan",
+   "description": "Two Adivasi women in Jharkhand, the journalist Dayamani Barla and the poet Nirmala Putul, assert identity through writing. Best Film on Social Issues, non-feature section, 56th National Film Awards.",
+   "thumb": "https://img.youtube.com/vi/LNS4QNrTSho/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=LNS4QNrTSho",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-119",
+   "group": "kritika",
+   "districts": [
+    "Ranchi",
+    "Dumka"
+   ],
+   "provisional": true,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "WOS-120",
+   "title": "Jadugoda: The Black Magic",
+   "year": null,
+   "creator": "Shriprakash, Kritika",
+   "description": "A short film on uranium mining and radiation at Jadugoda.",
+   "thumb": "https://img.youtube.com/vi/eIOmavVcG3M/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=eIOmavVcG3M",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-120",
+   "group": "kritika",
+   "districts": [
+    "Purbi Singhbhum (East Singhbhum)"
+   ],
+   "provisional": false,
+   "movement": "jadugoda",
+   "beyond": null
+  },
+  {
+   "id": "WOS-121",
+   "title": "Eer... Stories in Stone",
+   "year": "2011",
+   "creator": "Shriprakash; produced by PSBT",
+   "description": "Tribal history, erased from mainstream accounts, read in the stone monuments that record it.",
+   "thumb": "https://img.youtube.com/vi/m21RJwDt2Ec/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=m21RJwDt2Ec",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-121",
+   "group": "kritika",
+   "districts": [
+    "Khunti",
+    "Ranchi"
+   ],
+   "provisional": true,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "WOS-122",
+   "title": "Hul Sengal Aguwa (Unsung Heroes of Hul)",
+   "year": "2012",
+   "creator": "Shriprakash; produced by PSBT",
+   "description": "Retraces the memory of two Indigenous people's movements, and of the films made about them.",
+   "thumb": "https://img.youtube.com/vi/cSYtlYiqIMM/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=cSYtlYiqIMM",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-122",
+   "group": "kritika",
+   "districts": [
+    "Sahibganj",
+    "Dumka"
+   ],
+   "provisional": true,
+   "movement": "hul",
+   "beyond": null
+  },
+  {
+   "id": "WOS-123",
+   "title": "Nabikei (Footprint)",
+   "year": "2017",
+   "creator": "Shriprakash",
+   "description": "The legacy of uranium mining for the Diné, Laguna, and Acoma nations, with some five thousand abandoned mines, set in parallel with Jadugoda. Screened at the International Uranium Film Festival, American Southwest, 2018. No public stream.",
+   "thumb": null,
+   "access": "request",
+   "url": "https://uraniumfilmfestival.org/en/american-southwest-2018",
+   "urlLabel": "Festival listing",
+   "catalog": "catalog.html#WOS-123",
+   "group": "kritika",
+   "districts": [
+    "Purbi Singhbhum (East Singhbhum)"
+   ],
+   "provisional": false,
+   "movement": "jadugoda",
+   "beyond": "Diné, Laguna, and Acoma lands, US Southwest"
+  },
+  {
+   "id": "WOS-124",
+   "title": "Congo, The Blood in Our Pocket!",
+   "year": null,
+   "creator": "Shriprakash, Kritika",
+   "description": "On coltan and other mineral extraction in the Congo, and who bears its cost.",
+   "thumb": "https://img.youtube.com/vi/x8r0l3p9uuw/hqdefault.jpg",
+   "access": "open",
+   "url": "https://www.youtube.com/watch?v=x8r0l3p9uuw",
+   "urlLabel": "Watch on YouTube",
+   "catalog": "catalog.html#WOS-124",
+   "group": "kritika",
+   "districts": [],
+   "provisional": false,
+   "movement": null,
+   "beyond": "Democratic Republic of the Congo"
+  },
+  {
+   "id": "WOS-125",
+   "title": "Keemat Chukati Zindagi",
+   "year": null,
+   "creator": "Shriprakash",
+   "description": "On the poet and people's leader Mahendra Singh, killed in 2005, made over thirteen years. Screened in competition at the 10th Chennai International Documentary and Short Film Festival, 2022. No public stream.",
+   "thumb": null,
+   "access": "request",
+   "url": "http://chennaifilmfestival.blogspot.com/2022/01/",
+   "urlLabel": "Festival listing",
+   "catalog": "catalog.html#WOS-125",
+   "group": "kritika",
+   "districts": [
+    "Giridih"
+   ],
+   "provisional": true,
+   "movement": null,
+   "beyond": null
+  },
+  {
+   "id": "X-TAPU",
+   "title": "Tapu Rajee (Island Story)",
+   "year": "2024",
+   "creator": "Biju Toppo; Dr. Ram Dayal Munda Tribal Welfare Research Institute",
+   "description": "The people the map cannot hold: Oraon and Munda families taken to the Andamans as labour, outside the protected territory and absent from the register of the place they live. Screened in Jamshedpur and, in 2026, in Bangalore.",
+   "thumb": null,
+   "access": "none",
+   "url": null,
+   "urlLabel": null,
+   "catalog": null,
+   "group": "akhra",
+   "districts": [],
+   "provisional": false,
+   "movement": null,
+   "beyond": "Andaman Islands: Oraon and Munda migrants who demand Scheduled Tribe listing in relation to Jharkhand under Article 342"
+  },
+  {
+   "id": "X-GCN",
+   "title": "Gaon Chhodab Nahi",
+   "year": "2009",
+   "creator": "K. P. Sasi (dir.), lyrics Meghnath; ActionAid; circulated by AKHRA",
+   "description": "A song-film on displacement and migration, carried hand to hand on VCD and later online: we will not leave the village.",
+   "thumb": null,
+   "access": "open",
+   "url": "https://www.youtube.com/results?search_query=Gaon+Chhodab+Nahi",
+   "urlLabel": "Search on YouTube",
+   "catalog": null,
+   "group": "akhra",
+   "districts": [],
+   "provisional": true,
+   "movement": null,
+   "beyond": null
+  }
+ ],
+ "movements": [
+  {
+   "key": "hul",
+   "name": "Santal Hul",
+   "when": "1855–56",
+   "districts": [
+    "Sahibganj",
+    "Dumka",
+    "Pakur",
+    "Godda"
+   ],
+   "provisional": false,
+   "what": "The Santal rising against moneylenders, landlords, and the Company state in the Damin-i-koh and Santal Parganas.",
+   "source": "Andersen 2022"
+  },
+  {
+   "key": "ulgulan",
+   "name": "Birsa Munda's Ulgulan",
+   "when": "1899–1900",
+   "districts": [
+    "Khunti",
+    "Ranchi"
+   ],
+   "provisional": false,
+   "what": "The Munda rising led by Birsa Munda against dikus and the colonial land settlement; the origin of the khuntkatti protections later written into the 1908 Tenancy Act.",
+   "source": "Singh 1966"
+  },
+  {
+   "key": "koelkaro",
+   "name": "Koel Karo anti-dam movement",
+   "when": "1970s–2001",
+   "districts": [
+    "Khunti",
+    "Ranchi"
+   ],
+   "provisional": false,
+   "what": "Three decades of refusal to let the Koel and Karo rivers be dammed; police fired on protesters at Tapkara in February 2001.",
+   "films": [
+    "WOS-116",
+    "WOS-022"
+   ]
+  },
+  {
+   "key": "bauxite",
+   "name": "Against bauxite mining on the plateau",
+   "when": "1990s",
+   "districts": [
+    "Gumla",
+    "Lohardaga"
+   ],
+   "provisional": true,
+   "what": "Forest villages against bauxite leases on the plateau, filmed by Akhra as an ant fighting an elephant.",
+   "films": [
+    "WOS-020"
+   ]
+  },
+  {
+   "key": "jadugoda",
+   "name": "Jadugoda against uranium",
+   "when": "1990s–",
+   "districts": [
+    "Purbi Singhbhum (East Singhbhum)"
+   ],
+   "provisional": false,
+   "what": "Villages around the Uranium Corporation of India's mines and tailings ponds organise against radiation harm to health and land.",
+   "films": [
+    "WOS-117",
+    "WOS-120",
+    "WOS-123"
+   ]
+  },
+  {
+   "key": "kutku",
+   "name": "Kutku-Mandal dam",
+   "when": "1990s",
+   "districts": [
+    "Palamu"
+   ],
+   "provisional": false,
+   "what": "A closed sluice gate on the North Koel flooded some thirty-two villages.",
+   "films": [
+    "WOS-021"
+   ]
+  },
+  {
+   "key": "spongeiron",
+   "name": "Against sponge-iron pollution",
+   "when": "2000s–",
+   "districts": [
+    "Saraikela-Kharsawan",
+    "Pashchimi Singhbhum (West Singhbhum)"
+   ],
+   "provisional": true,
+   "what": "People living beside the sponge-iron belt contest the dust and heat on air, health, and fields.",
+   "films": [
+    "WOS-108"
+   ]
+  },
+  {
+   "key": "pathalgadi",
+   "name": "Pathalgadi",
+   "when": "2017–19",
+   "districts": [
+    "Khunti"
+   ],
+   "provisional": false,
+   "what": "Villages raise inscribed stone slabs asserting Fifth Schedule provisions and gram sabha self-rule; more than ten thousand people named in sedition cases, withdrawn in December 2019.",
+   "source": "Sharma 2019; Scroll Staff 2019"
+  },
+  {
+   "key": "statehood",
+   "name": "Jharkhand movement",
+   "when": "1930s–2000",
+   "districts": [],
+   "provisional": false,
+   "what": "The long movement for a separate state, won in November 2000; Ram Dayal Munda among its intellectuals.",
+   "films": [
+    "WOS-024"
+   ]
+  }
+ ]
+}

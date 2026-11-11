@@ -1,0 +1,30 @@
+{
+ "source": "Indian Bureau of Mines, Indian Minerals Yearbook 2022, State Reviews: Jharkhand (61st ed., advance release), mineral occurrence by district and Table 4 (production 2019-20 to 2021-22); coalfields from Coal Directory of India 2022-23 as reproduced in IBM Table 2. Uranium from the IBM note on UCIL. Coalfield-to-district attribution and the choice of 'mined' minerals by the author, from the IBM production list and public company records; marked 'author' where IBM gives no district.",
+ "symbols": {"coal": "C", "iron ore": "Fe", "bauxite": "Al", "uranium": "U", "copper": "Cu", "mica": "Mi", "limestone": "Ls", "graphite": "Gr", "kyanite": "Ky", "gold": "Au", "manganese": "Mn", "stone": "St"},
+ "districts": {
+  "Bokaro": {"mined": ["coal", "limestone"], "coalfields": ["East Bokaro"], "occur": ["coal", "limestone"]},
+  "Chatra": {"mined": ["coal"], "coalfields": ["North Karanpura"], "occur": ["coal"], "note": "author: North Karanpura attribution"},
+  "Deoghar": {"mined": [], "coalfields": ["Deogarh"], "occur": ["coal", "felspar", "granite", "quartz"]},
+  "Dhanbad": {"mined": ["coal"], "coalfields": ["Jharia", "Raniganj (Jharkhand part)"], "occur": ["coal", "fireclay", "limestone", "felspar", "quartz"]},
+  "Dumka": {"mined": ["stone"], "coalfields": ["Rajmahal"], "occur": ["bauxite", "china clay", "fireclay", "felspar", "granite", "quartz"], "note": "author: stone quarrying"},
+  "Garhwa": {"mined": ["limestone"], "coalfields": [], "occur": ["dolomite", "limestone"]},
+  "Giridih": {"mined": ["coal", "mica"], "coalfields": ["Giridih"], "occur": ["coal", "mica", "felspar", "fireclay", "limestone", "talc", "vermiculite", "quartz"], "note": "author: Giridih coalfield not in IBM Table 2"},
+  "Godda": {"mined": ["coal"], "coalfields": ["Rajmahal"], "occur": ["coal", "fireclay", "granite", "quartz"]},
+  "Gumla": {"mined": ["bauxite"], "coalfields": [], "occur": ["bauxite", "iron ore (magnetite)", "granite"]},
+  "Hazaribagh": {"mined": ["coal"], "coalfields": ["North Karanpura", "South Karanpura", "West Bokaro"], "occur": ["coal", "copper", "china clay", "garnet", "limestone", "sillimanite", "vermiculite", "fireclay", "felspar"]},
+  "Jamtara": {"mined": [], "coalfields": [], "occur": ["felspar", "quartz"]},
+  "Khunti": {"mined": [], "coalfields": [], "occur": [], "note": "IBM lists Khunti under Ranchi, from which it was carved in 2007"},
+  "Kodarma": {"mined": ["mica"], "coalfields": [], "occur": ["mica", "felspar", "granite", "talc", "quartz"]},
+  "Latehar": {"mined": ["bauxite", "coal"], "coalfields": ["Auranga (Aurangabad)", "Hutar", "North Karanpura"], "occur": ["bauxite", "coal", "iron ore (magnetite)", "felspar", "fireclay"], "note": "author: coalfield attribution"},
+  "Lohardaga": {"mined": ["bauxite"], "coalfields": [], "occur": ["bauxite", "china clay", "granite"]},
+  "Pakur": {"mined": ["coal", "stone"], "coalfields": ["Rajmahal"], "occur": ["coal", "bentonite", "stone"], "note": "author: stone quarrying"},
+  "Palamu": {"mined": ["graphite", "limestone"], "coalfields": ["Daltonganj", "Hutar"], "occur": ["coal", "graphite", "limestone", "dolomite", "andalusite", "rock phosphate", "barytes", "bauxite", "fireclay", "felspar", "iron ore (magnetite)", "granite", "talc"]},
+  "Pashchimi Singhbhum (West Singhbhum)": {"mined": ["iron ore", "manganese", "limestone"], "coalfields": [], "occur": ["iron ore (haematite)", "manganese", "kyanite", "limestone", "ochre", "china clay", "asbestos", "quartzite", "fireclay", "talc"]},
+  "Purbi Singhbhum (East Singhbhum)": {"mined": ["uranium", "copper", "gold"], "coalfields": [], "occur": ["uranium", "copper", "gold", "silver", "apatite", "rock phosphate", "chromite", "cobalt", "nickel", "asbestos", "barytes", "titanium", "pyroxenite", "iron ore (magnetite)", "limestone", "china clay", "granite", "quartzite", "talc"]},
+  "Ramgarh": {"mined": ["coal"], "coalfields": ["Ramgarh", "West Bokaro", "South Karanpura"], "occur": ["coal"], "note": "author: Ramgarh was carved from Hazaribagh in 2007; coalfield attribution"},
+  "Ranchi": {"mined": [], "coalfields": ["North Karanpura"], "occur": ["coal", "china clay", "limestone", "titanium", "granite", "fireclay", "felspar", "quartz"]},
+  "Sahibganj": {"mined": ["stone"], "coalfields": ["Rajmahal"], "occur": ["coal", "china clay", "bentonite", "quartz"], "note": "author: Rajmahal basalt quarrying"},
+  "Saraikela-Kharsawan": {"mined": ["kyanite"], "coalfields": [], "occur": ["kyanite", "pyrophyllite", "quartz"]},
+  "Simdega": {"mined": [], "coalfields": [], "occur": []}
+ }
+}

@@ -57,7 +57,7 @@
       <ul>
         <li><a href="#question">Question</a></li>
         <li><a href="#instruments">Maps as Instruments</a></li>
-        <li><a href="#terrain">The Terrain the State Counts</a></li>
+        <li><a href="#terrain">The Terrain, in Four Layers</a></li>
         <li><a href="#counter">Counter-Mapping</a></li>
         <li><a href="#montage">Montage</a></li>
         <li><a href="#akhra">A Digital Akhra</a></li>
@@ -114,37 +114,53 @@
         author. Every layer is published by the state or an open public archive.</figcaption>
     </figure>
 
-    <h2 id="terrain">The Terrain the State Counts</h2>
+    <h2 id="terrain">The Terrain, in Four Layers</h2>
     <p>
-      A map built only from official, public figures, read against itself. Each district shows its Scheduled Tribe
-      population (Census 2011) or its forest cover (Forest Survey of India, 2023); the outline marks districts that
-      are Scheduled Areas under the Fifth Schedule. Click a district for its figures. Switch on
-      <em>Documentary regions</em> to see where Akhra&rsquo;s films have gone, at the same district scale.
+      One map, four ways of seeing the same ground. <em>Count</em> is the state&rsquo;s own arithmetic: each district&rsquo;s
+      Scheduled Tribe population (Census 2011) or forest cover (Forest Survey of India, 2023), with the Fifth Schedule
+      areas outlined. <em>Extract</em> shades the districts where the Indian Bureau of Mines reports mining, and marks what is
+      taken: coal, iron, bauxite, uranium, copper, mica. <em>Resist</em> marks the movements the films witness, from the Hul
+      of 1855 to the pathalgadi stones. <em>Film</em> places the documentaries themselves, by Akhra, by Shriprakash and
+      Kritika, and by others, each at the district its record names. Hover a film for its blurb; click it to read the
+      record and find where to watch. Nothing on this map is finer than a district.
     </p>
     <div class="cm-controls" role="group" aria-label="Map layers">
+      <span class="cm-verb">Count</span>
       <button type="button" class="cm-btn" data-cm-layer="st" aria-pressed="true">Scheduled Tribe share</button>
       <button type="button" class="cm-btn" data-cm-layer="forest" aria-pressed="false">Forest cover</button>
       <button type="button" class="cm-btn" data-cm-layer="scheduled" aria-pressed="false">Fifth Schedule areas</button>
-      <button type="button" class="cm-btn" data-cm-layer="films" aria-pressed="false" disabled>Documentary regions</button>
+      <span class="cm-verb">Extract</span>
+      <button type="button" class="cm-btn" data-cm-layer="extract" aria-pressed="false" disabled>Mining districts</button>
+      <span class="cm-verb">Resist</span>
+      <button type="button" class="cm-btn" data-cm-layer="resist" aria-pressed="false" disabled>Movements</button>
+      <span class="cm-verb">Film</span>
+      <button type="button" class="cm-btn" data-cm-layer="films" aria-pressed="false" disabled>Films</button>
+      <button type="button" class="cm-btn cm-btn-all" data-cm-preset disabled>All four</button>
     </div>
     <div class="cm-map-wrap">
-      <div id="cm-map" class="cm-map" data-src="assets/data/jharkhand-districts.geojson" data-films="assets/data/akhra-films.json" role="region" aria-label="Interactive map of Jharkhand's districts"></div>
-      <p id="cm-info" class="cm-info" aria-live="polite">Click a district.</p>
+      <div id="cm-map" class="cm-map" data-src="assets/data/jharkhand-districts.geojson" data-extract="assets/data/jharkhand-extraction.json" data-films="assets/data/films-map.json" role="region" aria-label="Interactive map of Jharkhand's districts in four layers"></div>
+      <div id="cm-info" class="cm-info" aria-live="polite">Click a district.</div>
     </div>
-    <div id="cm-regions" class="cm-regions" hidden></div>
     <p>
-      Read together, the layers show how the state&rsquo;s own categories line up. Every one of the thirteen
-      districts where Scheduled Tribes make up more than about a quarter of the population is fully a Scheduled
-      Area, from Khunti (73 per cent) to Sahibganj (27 per cent); Godda, Garhwa, and Palamu are scheduled in part.
-      The forest does not follow the same lines: Chatra and Hazaribagh are among the most forested districts in the
-      state and are not Scheduled Areas at all.
+      Read together, the layers show how the state&rsquo;s own categories line up, and where the camera went. Every one of
+      the thirteen districts where Scheduled Tribes make up more than about a quarter of the population is fully a
+      Scheduled Area, from Khunti (73 per cent) to Sahibganj (27 per cent); Godda, Garhwa, and Palamu are scheduled in
+      part. The forest does not follow the same lines: Chatra and Hazaribagh are among the most forested districts in
+      the state and are not Scheduled Areas at all. The mines follow a third line, the coal belt from Dhanbad west to
+      Latehar and the ore country of the two Singhbhums, and the films follow the mines: Jadugoda, the sponge-iron belt,
+      the bauxite plateau, the Lohardaga line. A hollow film point, or a dashed movement, means the district is the
+      author&rsquo;s reading and has not yet been confirmed from the film.
     </p>
+    <div id="cm-film-list" class="cm-regions" hidden></div>
     <p class="cm-sources-inline">
       Data: Census of India 2011, Primary Census Abstract; Forest Survey of India, <em>India State of Forest Report
       2023</em>, Vol. II, Table 10.11.3; Ministry of Tribal Affairs, <em>Statistical Profile of Scheduled Tribes in
       India</em> (2013), list of Fifth Schedule Areas, citing the Scheduled Areas (State of Jharkhand) Order, 2007.
       Khunti was carved from Ranchi district, which is fully scheduled, after that Order. District boundaries:
-      DataMeet, <em>India &ndash; District Map (Census 2011)</em>, CC BY 2.5 India, simplified.
+      DataMeet, <em>India &ndash; District Map (Census 2011)</em>, CC BY 2.5 India, simplified. Mining: Indian Bureau of
+      Mines, <em>Indian Minerals Yearbook 2022</em>, State Reviews: Jharkhand, mineral occurrence by district and
+      production 2019&ndash;22; coalfields from the <em>Coal Directory of India 2022&ndash;23</em>, attributed to districts by
+      the author. Movements and films: the archive&rsquo;s catalog records and the sources listed below.
     </p>
 
     <h2 id="counter">Counter-Mapping</h2>
@@ -226,10 +242,38 @@
       <li><strong>Pedagogy</strong> <span>Teaching</span><p>Workshops that train the next generation of filmmakers, who return to the first phase.</p></li>
     </ol>
     <p class="cm-sources-inline">Author&rsquo;s elaboration from fieldwork at AKHRA, Ranchi.</p>
-    <figure class="field-photo cm-photo">
-      <img src="assets/img/khunti-screening.jpg" alt="An outdoor night screening: villagers seated and standing on open ground facing a lit screen" loading="lazy">
-      <figcaption>An outdoor film screening in Khunti. From Akhra Ranchi&rsquo;s archive. Shown with AKHRA&rsquo;s permission.</figcaption>
-    </figure>
+    <div class="cm-strip-wrap">
+      <div class="cm-strip" aria-label="Screenings and the studio at AKHRA, Ranchi: a moving strip of photographs">
+        <div class="cm-strip-track">
+          <img src="assets/img/khunti-screening.jpg" alt="An outdoor night screening in Khunti: villagers seated and standing on open ground facing a lit screen">
+          <img src="assets/img/akhra/strip-02.jpg" alt="Biju Toppo introduces a film before a screening at the Tribal Research Institute, Ranchi" loading="lazy">
+          <img src="assets/img/akhra/strip-03.jpg" alt="The editing suite at AKHRA, Ranchi, with a film paused on the monitors" loading="lazy">
+          <img src="assets/img/akhra/strip-04.jpg" alt="A village screening at night, the projector throwing light across the gathering" loading="lazy">
+          <img src="assets/img/akhra/strip-05.jpg" alt="Filmmakers and villagers seated in a courtyard during a shoot in Lohardaga" loading="lazy">
+          <img src="assets/img/akhra/strip-06.jpg" alt="A hall screening at the Tribal Research Institute, Ranchi, the title card on screen" loading="lazy">
+          <img src="assets/img/akhra/strip-07.jpg" alt="A night screening in a village, seen from the edge of the gathering" loading="lazy">
+          <img src="assets/img/akhra/strip-08.jpg" alt="A wall of photographs at AKHRA's office recording past screenings" loading="lazy">
+          <img src="assets/img/akhra/strip-09.jpg" alt="The audience at a Tribal Research Institute screening in Ranchi" loading="lazy">
+          <img src="assets/img/akhra/strip-10.jpg" alt="A village screening at night, the crowd seated in rows on the ground" loading="lazy">
+        
+          <img src="assets/img/khunti-screening.jpg" aria-hidden="true" alt="An outdoor night screening in Khunti: villagers seated and standing on open ground facing a lit screen">
+          <img src="assets/img/akhra/strip-02.jpg" alt="Biju Toppo introduces a film before a screening at the Tribal Research Institute, Ranchi" loading="lazy" aria-hidden="true">
+          <img src="assets/img/akhra/strip-03.jpg" alt="The editing suite at AKHRA, Ranchi, with a film paused on the monitors" loading="lazy" aria-hidden="true">
+          <img src="assets/img/akhra/strip-04.jpg" alt="A village screening at night, the projector throwing light across the gathering" loading="lazy" aria-hidden="true">
+          <img src="assets/img/akhra/strip-05.jpg" alt="Filmmakers and villagers seated in a courtyard during a shoot in Lohardaga" loading="lazy" aria-hidden="true">
+          <img src="assets/img/akhra/strip-06.jpg" alt="A hall screening at the Tribal Research Institute, Ranchi, the title card on screen" loading="lazy" aria-hidden="true">
+          <img src="assets/img/akhra/strip-07.jpg" alt="A night screening in a village, seen from the edge of the gathering" loading="lazy" aria-hidden="true">
+          <img src="assets/img/akhra/strip-08.jpg" alt="A wall of photographs at AKHRA's office recording past screenings" loading="lazy" aria-hidden="true">
+          <img src="assets/img/akhra/strip-09.jpg" alt="The audience at a Tribal Research Institute screening in Ranchi" loading="lazy" aria-hidden="true">
+          <img src="assets/img/akhra/strip-10.jpg" alt="A village screening at night, the crowd seated in rows on the ground" loading="lazy" aria-hidden="true">
+        </div>
+      </div>
+      <p class="cm-strip-caption">
+        Screenings in villages, at the Tribal Research Institute in Ranchi, and the editing room at AKHRA. From Akhra
+        Ranchi&rsquo;s archive and the curator&rsquo;s fieldwork, 2024. Shown with AKHRA&rsquo;s permission.
+        <button type="button" class="cm-btn cm-btn-small" data-strip-pause aria-pressed="false">Pause</button>
+      </p>
+    </div>
 
     <h2 id="ethics">Why District Level</h2>
     <p>
@@ -253,6 +297,7 @@
       <li>European Space Agency. 2025. Copernicus Sentinel-2C Level-2A tiles 45QTF and 45QTG, April 26, 2025. Registry of Open Data on AWS. <a href="https://registry.opendata.aws/sentinel-2-l2a-cogs/" target="_blank" rel="noopener">Link</a></li>
       <li>Feld, Steven. 1996. &ldquo;Waterfalls of Song: An Acoustemology of Place Resounding in Bosavi, Papua New Guinea.&rdquo; In <em>Senses of Place</em>, edited by Steven Feld and Keith H. Basso, 91&ndash;135. Santa Fe: School of American Research Press.</li>
       <li>Forest Survey of India. 2024. <em>India State of Forest Report 2023</em>, Vol. II, Table 10.11.3. <a href="https://fsi.nic.in/forest-report-2023" target="_blank" rel="noopener">Link</a></li>
+      <li>Indian Bureau of Mines. 2024. <em>Indian Minerals Yearbook 2022, Part I: State Reviews, Jharkhand</em>. 61st ed., advance release. Nagpur: Ministry of Mines, Government of India. <a href="https://ibm.gov.in/writereaddata/files/17325350556744630f5e6aa12_Jharkhand_IMYB_2022.pdf">PDF</a></li>
       <li>Guha, Ranajit. 1983. <em>Elementary Aspects of Peasant Insurgency in Colonial India</em>. Delhi: Oxford University Press.</li>
       <li>Harley, J. B. 1989. &ldquo;Deconstructing the Map.&rdquo; <em>Cartographica</em> 26 (2): 1&ndash;20. <a href="https://doi.org/10.3138/E635-7827-1757-9T53" target="_blank" rel="noopener">DOI</a></li>
       <li>Hassan, Mahmodul. 2024. &ldquo;Jharkhand&rsquo;s Controversial Land Bank Is Undermining Rights of Marginalised.&rdquo; <em>Maktoob Media</em>, November 17. <a href="https://maktoobmedia.com/india/jharkhands-controversial-land-bank-is-undermining-rights-of-marginalised/" target="_blank" rel="noopener">Link</a></li>
@@ -266,6 +311,7 @@
       <li>Sabekia, Irakli. 2022. <em>Archive of Spatial Knowledge</em>. <a href="https://archive-of-spatial-knowledge.org/" target="_blank" rel="noopener">Link</a></li>
       <li>Scroll Staff. 2019. &ldquo;Jharkhand: Hemant Soren-Led JMM Government Drops All Cases Filed Against Pathalgadi Supporters.&rdquo; <em>Scroll</em>, December 29. <a href="https://scroll.in/latest/948222/jharkhand-pathalgadi-sedition-cases-dropped-by-hemant-soren-government" target="_blank" rel="noopener">Link</a></li>
       <li>Sharma, Supriya. 2019. &ldquo;10,000 People Charged with Sedition in One Jharkhand District. What Does Democracy Mean Here?&rdquo; <em>Scroll</em>, November 19. <a href="https://scroll.in/article/944116/10000-people-charged-with-sedition-in-one-jharkhand-district-what-does-democracy-mean-here" target="_blank" rel="noopener">Link</a></li>
+      <li>Singh, Kumar Suresh. 1966. <em>The Dust-Storm and the Hanging Mist: A Study of Birsa Munda and His Movement in Chhotanagpur (1874&ndash;1901)</em>. Calcutta: Firma K. L. Mukhopadhyay.</li>
       <li>Sushmita. 2022. &ldquo;Jharkhand: How the State Is Dispossessing Villagers of Their Forest Rights by Subverting Land Laws.&rdquo; <em>Scroll</em>, July 26. <a href="https://scroll.in/article/1029011/in-jharkhand-villagers-are-being-dispossessed-through-subversion-of-land-laws" target="_blank" rel="noopener">Link</a></li>
       <li>Wood, Denis, with John Fels and John Krygier. 2010. <em>Rethinking the Power of Maps</em>. New York: Guilford Press.</li>
       <li>Zumbish, and Shuchita Jha. 2022. &ldquo;Taking Ownership: How Forest-Dwellers in Chhattisgarh, Odisha Claimed Rights over Traditional Boundary.&rdquo; <em>Down To Earth</em>, August 29. <a href="https://www.downtoearth.org.in/forests/taking-ownership-how-forest-dwellers-in-chhattisgarh-odisha-claimed-rights-over-traditional-boundary-84596" target="_blank" rel="noopener">Link</a></li>
