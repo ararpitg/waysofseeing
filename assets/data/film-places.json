@@ -1,56 +1,729 @@
 {
  "note": "District level only. A film resolves to a district only where the film or its catalog record names the place; 'provisional' marks a district the author infers and has not yet confirmed from the film. Off-map films are listed, not drawn. Extras are films not yet in the catalog.",
- "groups": {"akhra": "AKHRA, Ranchi", "kritika": "Shriprakash / Kritika", "curator": "Curator's own films", "other": "Other makers"},
+ "groups": {
+  "akhra": "AKHRA, Ranchi",
+  "kritika": "Shriprakash / Kritika",
+  "curator": "Curator's own films",
+  "other": "Other makers"
+ },
  "films": {
-  "WOS-020": {"group": "akhra", "districts": ["Gumla", "Lohardaga"], "provisional": true, "movement": "bauxite"},
-  "WOS-021": {"group": "akhra", "districts": ["Palamu"], "provisional": false, "movement": "kutku"},
-  "WOS-022": {"group": "akhra", "districts": ["Khunti"], "provisional": false, "movement": "koelkaro", "beyond": "Kashipur (Odisha), Nagarnar (Chhattisgarh)"},
-  "WOS-023": {"group": "akhra", "districts": [], "beyond": "Rourkela, Sundargarh district, Odisha"},
-  "WOS-024": {"group": "akhra", "districts": ["Ranchi"], "provisional": true, "movement": "statehood"},
-  "WOS-025": {"group": "akhra", "districts": [], "provisional": true},
-  "WOS-068": {"group": "akhra", "districts": ["Gumla", "Pashchimi Singhbhum (West Singhbhum)"], "provisional": false},
-  "WOS-069": {"group": "akhra", "districts": [], "provisional": true},
-  "WOS-073": {"group": "akhra", "districts": ["Ranchi"], "provisional": true},
-  "WOS-106": {"group": "akhra", "districts": [], "provisional": true},
-  "WOS-107": {"group": "akhra", "districts": [], "beyond": "Tea gardens of North Bengal and Assam"},
-  "WOS-108": {"group": "akhra", "districts": ["Saraikela-Kharsawan", "Pashchimi Singhbhum (West Singhbhum)"], "provisional": true, "movement": "spongeiron"},
-  "WOS-109": {"group": "akhra", "districts": ["Lohardaga", "Ranchi"], "provisional": false},
-  "WOS-110": {"group": "akhra", "districts": [], "provisional": true},
-  "WOS-111": {"group": "akhra", "districts": [], "provisional": true},
-  "WOS-112": {"group": "akhra", "districts": [], "provisional": true},
-  "WOS-116": {"group": "kritika", "districts": ["Khunti", "Ranchi"], "provisional": false, "movement": "koelkaro"},
-  "WOS-117": {"group": "kritika", "districts": ["Purbi Singhbhum (East Singhbhum)"], "provisional": false, "movement": "jadugoda"},
-  "WOS-118": {"group": "kritika", "districts": [], "provisional": true},
-  "WOS-119": {"group": "kritika", "districts": ["Ranchi", "Dumka"], "provisional": true},
-  "WOS-120": {"group": "kritika", "districts": ["Purbi Singhbhum (East Singhbhum)"], "provisional": false, "movement": "jadugoda"},
-  "WOS-121": {"group": "kritika", "districts": ["Khunti", "Ranchi"], "provisional": true},
-  "WOS-122": {"group": "kritika", "districts": ["Sahibganj", "Dumka"], "provisional": true, "movement": "hul"},
-  "WOS-123": {"group": "kritika", "districts": ["Purbi Singhbhum (East Singhbhum)"], "provisional": false, "movement": "jadugoda", "beyond": "Diné, Laguna, and Acoma lands, US Southwest"},
-  "WOS-124": {"group": "kritika", "districts": [], "beyond": "Democratic Republic of the Congo"},
-  "WOS-125": {"group": "kritika", "districts": ["Giridih"], "provisional": true},
-  "WOS-001": {"group": "curator", "districts": ["Gumla"], "provisional": false},
-  "WOS-002": {"group": "curator", "districts": ["Gumla"], "provisional": false, "beyond": "Rayagada (Odisha), Dhamtari (Chhattisgarh)"},
-  "WOS-003": {"group": "curator", "districts": [], "beyond": "Dhamtari, Chhattisgarh"},
-  "WOS-004": {"group": "curator", "districts": [], "beyond": "Bhanupratappur, Chhattisgarh"},
-  "WOS-114": {"group": "curator", "districts": [], "beyond": "Rayagada district, Odisha"},
-  "WOS-026": {"group": "other", "districts": [], "beyond": "Madhya Pradesh"},
-  "WOS-027": {"group": "other", "districts": [], "beyond": "Bhopal, Madhya Pradesh"},
-  "WOS-074": {"group": "other", "districts": [], "provisional": true},
-  "WOS-086": {"group": "other", "districts": ["Ranchi"], "provisional": true}
+  "WOS-020": {
+   "group": "akhra",
+   "districts": [
+    "Gumla",
+    "Lohardaga"
+   ],
+   "provisional": true,
+   "movement": "bauxite",
+   "theme": "extraction",
+   "funder": "collective",
+   "institution": null
+  },
+  "WOS-021": {
+   "group": "akhra",
+   "districts": [
+    "Palamu"
+   ],
+   "provisional": false,
+   "movement": "kutku",
+   "theme": "displacement",
+   "funder": "collective",
+   "institution": null
+  },
+  "WOS-022": {
+   "group": "akhra",
+   "districts": [
+    "Khunti"
+   ],
+   "provisional": false,
+   "movement": "koelkaro",
+   "beyond": "Kashipur (Odisha), Nagarnar (Chhattisgarh)",
+   "theme": "displacement",
+   "points": [
+    "rayagada",
+    "jagdalpur"
+   ],
+   "funder": "collective",
+   "institution": null
+  },
+  "WOS-023": {
+   "group": "akhra",
+   "districts": [],
+   "beyond": "Rourkela, Sundargarh district, Odisha",
+   "theme": "extraction",
+   "points": [
+    "rourkela"
+   ],
+   "funder": "solidarity",
+   "institution": null
+  },
+  "WOS-024": {
+   "group": "akhra",
+   "districts": [
+    "Ranchi"
+   ],
+   "provisional": true,
+   "movement": "statehood",
+   "theme": "memory",
+   "funder": "state",
+   "institution": "fd"
+  },
+  "WOS-025": {
+   "group": "akhra",
+   "districts": [],
+   "provisional": true,
+   "theme": "extraction",
+   "funder": "collective",
+   "institution": null
+  },
+  "WOS-068": {
+   "group": "akhra",
+   "districts": [
+    "Gumla",
+    "Pashchimi Singhbhum (West Singhbhum)"
+   ],
+   "provisional": false,
+   "theme": "selfrule",
+   "funder": "development",
+   "institution": "apu"
+  },
+  "WOS-069": {
+   "group": "akhra",
+   "districts": [],
+   "provisional": true,
+   "theme": "livelihood",
+   "funder": "development",
+   "institution": "pradan"
+  },
+  "WOS-073": {
+   "group": "akhra",
+   "districts": [
+    "Ranchi"
+   ],
+   "provisional": true,
+   "theme": "memory",
+   "funder": "collective",
+   "institution": null
+  },
+  "WOS-106": {
+   "group": "akhra",
+   "districts": [],
+   "provisional": true,
+   "theme": "extraction",
+   "funder": "collective",
+   "institution": null
+  },
+  "WOS-107": {
+   "group": "akhra",
+   "districts": [],
+   "beyond": "Tea gardens of North Bengal and Assam",
+   "theme": "migration",
+   "points": [
+    "jalpaiguri",
+    "dibrugarh"
+   ],
+   "funder": "collective",
+   "institution": null
+  },
+  "WOS-108": {
+   "group": "akhra",
+   "districts": [
+    "Saraikela-Kharsawan",
+    "Pashchimi Singhbhum (West Singhbhum)"
+   ],
+   "provisional": true,
+   "movement": "spongeiron",
+   "theme": "extraction",
+   "funder": "collective",
+   "institution": null
+  },
+  "WOS-109": {
+   "group": "akhra",
+   "districts": [
+    "Lohardaga",
+    "Ranchi"
+   ],
+   "provisional": false,
+   "theme": "memory",
+   "funder": "collective",
+   "institution": null
+  },
+  "WOS-110": {
+   "group": "akhra",
+   "districts": [],
+   "provisional": true,
+   "theme": "memory",
+   "funder": "state",
+   "institution": "tri"
+  },
+  "WOS-111": {
+   "group": "akhra",
+   "districts": [],
+   "provisional": true,
+   "theme": "memory",
+   "funder": "state",
+   "institution": "tri"
+  },
+  "WOS-112": {
+   "group": "akhra",
+   "districts": [],
+   "provisional": true,
+   "theme": "memory",
+   "funder": "corporate",
+   "institution": "tsf"
+  },
+  "WOS-116": {
+   "group": "kritika",
+   "districts": [
+    "Khunti",
+    "Ranchi"
+   ],
+   "provisional": false,
+   "movement": "koelkaro",
+   "theme": "displacement",
+   "funder": "independent",
+   "institution": null
+  },
+  "WOS-117": {
+   "group": "kritika",
+   "districts": [
+    "Purbi Singhbhum (East Singhbhum)"
+   ],
+   "provisional": false,
+   "movement": "jadugoda",
+   "theme": "extraction",
+   "funder": "independent",
+   "institution": null
+  },
+  "WOS-118": {
+   "group": "kritika",
+   "districts": [],
+   "provisional": true,
+   "theme": "selfrule",
+   "funder": "independent",
+   "institution": null
+  },
+  "WOS-119": {
+   "group": "kritika",
+   "districts": [
+    "Ranchi",
+    "Dumka"
+   ],
+   "provisional": true,
+   "theme": "voice",
+   "funder": "broadcast",
+   "institution": "psbt"
+  },
+  "WOS-120": {
+   "group": "kritika",
+   "districts": [
+    "Purbi Singhbhum (East Singhbhum)"
+   ],
+   "provisional": false,
+   "movement": "jadugoda",
+   "theme": "extraction",
+   "funder": "independent",
+   "institution": null
+  },
+  "WOS-121": {
+   "group": "kritika",
+   "districts": [
+    "Khunti",
+    "Ranchi"
+   ],
+   "provisional": true,
+   "theme": "memory",
+   "funder": "broadcast",
+   "institution": "psbt"
+  },
+  "WOS-122": {
+   "group": "kritika",
+   "districts": [
+    "Sahibganj",
+    "Dumka"
+   ],
+   "provisional": true,
+   "movement": "hul",
+   "theme": "memory",
+   "funder": "broadcast",
+   "institution": "psbt"
+  },
+  "WOS-123": {
+   "group": "kritika",
+   "districts": [
+    "Purbi Singhbhum (East Singhbhum)"
+   ],
+   "provisional": false,
+   "movement": "jadugoda",
+   "beyond": "Diné, Laguna, and Acoma lands, US Southwest",
+   "theme": "extraction",
+   "funder": "independent",
+   "institution": null
+  },
+  "WOS-124": {
+   "group": "kritika",
+   "districts": [],
+   "beyond": "Democratic Republic of the Congo",
+   "theme": "extraction",
+   "funder": "independent",
+   "institution": null
+  },
+  "WOS-125": {
+   "group": "kritika",
+   "districts": [
+    "Giridih"
+   ],
+   "provisional": true,
+   "theme": "selfrule",
+   "funder": "independent",
+   "institution": null
+  },
+  "WOS-001": {
+   "group": "curator",
+   "districts": [
+    "Gumla"
+   ],
+   "provisional": false,
+   "theme": "livelihood",
+   "funder": "independent",
+   "institution": null
+  },
+  "WOS-002": {
+   "group": "curator",
+   "districts": [
+    "Gumla"
+   ],
+   "provisional": false,
+   "beyond": "Rayagada (Odisha), Dhamtari (Chhattisgarh)",
+   "theme": "livelihood",
+   "points": [
+    "rayagada",
+    "dhamtari"
+   ],
+   "funder": "independent",
+   "institution": null
+  },
+  "WOS-003": {
+   "group": "curator",
+   "districts": [],
+   "beyond": "Dhamtari, Chhattisgarh",
+   "theme": "voice",
+   "points": [
+    "dhamtari"
+   ],
+   "funder": "independent",
+   "institution": null
+  },
+  "WOS-004": {
+   "group": "curator",
+   "districts": [],
+   "beyond": "Bhanupratappur, Chhattisgarh",
+   "theme": "livelihood",
+   "points": [
+    "kanker"
+   ],
+   "funder": "development",
+   "institution": null
+  },
+  "WOS-114": {
+   "group": "curator",
+   "districts": [],
+   "beyond": "Rayagada district, Odisha",
+   "theme": "voice",
+   "points": [
+    "rayagada"
+   ],
+   "funder": "independent",
+   "institution": null
+  },
+  "WOS-026": {
+   "group": "other",
+   "districts": [],
+   "beyond": "Madhya Pradesh",
+   "theme": "voice",
+   "points": [
+    "bhopal"
+   ],
+   "provisional": true,
+   "funder": "collective",
+   "institution": null
+  },
+  "WOS-027": {
+   "group": "other",
+   "districts": [],
+   "beyond": "Bhopal, Madhya Pradesh",
+   "theme": "voice",
+   "points": [
+    "bhopal"
+   ],
+   "funder": "collective",
+   "institution": null
+  },
+  "WOS-074": {
+   "group": "other",
+   "districts": [],
+   "provisional": true,
+   "theme": "livelihood",
+   "funder": "development",
+   "institution": "pradan"
+  },
+  "WOS-086": {
+   "group": "other",
+   "districts": [
+    "Ranchi"
+   ],
+   "provisional": true,
+   "theme": "memory",
+   "funder": "state",
+   "institution": null
+  }
  },
  "extras": [
-  {"id": "X-TAPU", "title": "Tapu Rajee (Island Story)", "year": "2024", "creator": "Biju Toppo; Dr. Ram Dayal Munda Tribal Welfare Research Institute", "group": "akhra", "districts": [], "beyond": "Andaman Islands: Oraon and Munda migrants who demand Scheduled Tribe listing in relation to Jharkhand under Article 342", "description": "The people the map cannot hold: Oraon and Munda families taken to the Andamans as labour, outside the protected territory and absent from the register of the place they live. Screened in Jamshedpur and, in 2026, in Bangalore.", "access": "none"},
-  {"id": "X-GCN", "title": "Gaon Chhodab Nahi", "year": "2009", "creator": "K. P. Sasi (dir.), lyrics Meghnath; ActionAid; circulated by AKHRA", "group": "akhra", "districts": [], "provisional": true, "description": "A song-film on displacement and migration, carried hand to hand on VCD and later online: we will not leave the village.", "access": "open", "url": "https://www.youtube.com/results?search_query=Gaon+Chhodab+Nahi", "urlLabel": "Search on YouTube"}
+  {
+   "id": "X-TAPU",
+   "title": "Tapu Rajee (Island Story)",
+   "year": "2024",
+   "creator": "Biju Toppo; Dr. Ram Dayal Munda Tribal Welfare Research Institute",
+   "group": "akhra",
+   "districts": [],
+   "beyond": "Andaman Islands: Oraon and Munda migrants who seek Scheduled Tribe listing in relation to Jharkhand under Article 342",
+   "description": "The people the map cannot hold: Oraon and Munda migrants settled in the Andaman Islands, outside the protected territory and absent from the list of the place they live. Screened in Jamshedpur and, in 2026, in Bangalore.",
+   "access": "none",
+   "theme": "migration",
+   "points": [
+    "andaman"
+   ],
+   "funder": "state",
+   "institution": "tri"
+  },
+  {
+   "id": "X-GCN",
+   "title": "Gaon Chhodab Nahi",
+   "year": "2009",
+   "creator": "K. P. Sasi (dir.), lyrics Meghnath; ActionAid; circulated by AKHRA",
+   "group": "akhra",
+   "districts": [],
+   "provisional": true,
+   "description": "A song-film on displacement and migration, carried hand to hand on VCD and later online: we will not leave the village.",
+   "access": "open",
+   "url": "https://www.youtube.com/results?search_query=Gaon+Chhodab+Nahi",
+   "urlLabel": "Search on YouTube",
+   "theme": "displacement",
+   "funder": "development",
+   "institution": "actionaid"
+  }
  ],
  "movements": [
-  {"key": "hul", "name": "Santal Hul", "when": "1855–56", "districts": ["Sahibganj", "Dumka", "Pakur", "Godda"], "provisional": false, "what": "The Santal rising against moneylenders, landlords, and the Company state in the Damin-i-koh and Santal Parganas.", "source": "Andersen 2022"},
-  {"key": "ulgulan", "name": "Birsa Munda's Ulgulan", "when": "1899–1900", "districts": ["Khunti", "Ranchi"], "provisional": false, "what": "The Munda rising led by Birsa Munda against dikus and the colonial land settlement; the origin of the khuntkatti protections later written into the 1908 Tenancy Act.", "source": "Singh 1966"},
-  {"key": "koelkaro", "name": "Koel Karo anti-dam movement", "when": "1970s–2001", "districts": ["Khunti", "Ranchi"], "provisional": false, "what": "Three decades of refusal to let the Koel and Karo rivers be dammed; police fired on protesters at Tapkara in February 2001.", "films": ["WOS-116", "WOS-022"]},
-  {"key": "bauxite", "name": "Against bauxite mining on the plateau", "when": "1990s", "districts": ["Gumla", "Lohardaga"], "provisional": true, "what": "Forest villages against bauxite leases on the plateau, filmed by Akhra as an ant fighting an elephant.", "films": ["WOS-020"]},
-  {"key": "jadugoda", "name": "Jadugoda against uranium", "when": "1990s–", "districts": ["Purbi Singhbhum (East Singhbhum)"], "provisional": false, "what": "Villages around the Uranium Corporation of India's mines and tailings ponds organise against radiation harm to health and land.", "films": ["WOS-117", "WOS-120", "WOS-123"]},
-  {"key": "kutku", "name": "Kutku-Mandal dam", "when": "1990s", "districts": ["Palamu"], "provisional": false, "what": "A closed sluice gate on the North Koel flooded some thirty-two villages.", "films": ["WOS-021"]},
-  {"key": "spongeiron", "name": "Against sponge-iron pollution", "when": "2000s–", "districts": ["Saraikela-Kharsawan", "Pashchimi Singhbhum (West Singhbhum)"], "provisional": true, "what": "People living beside the sponge-iron belt contest the dust and heat on air, health, and fields.", "films": ["WOS-108"]},
-  {"key": "pathalgadi", "name": "Pathalgadi", "when": "2017–19", "districts": ["Khunti"], "provisional": false, "what": "Villages raise inscribed stone slabs asserting Fifth Schedule provisions and gram sabha self-rule; more than ten thousand people named in sedition cases, withdrawn in December 2019.", "source": "Sharma 2019; Scroll Staff 2019"},
-  {"key": "statehood", "name": "Jharkhand movement", "when": "1930s–2000", "districts": [], "provisional": false, "what": "The long movement for a separate state, won in November 2000; Ram Dayal Munda among its intellectuals.", "films": ["WOS-024"]}
+  {
+   "key": "hul",
+   "name": "Santal Hul",
+   "when": "1855–56",
+   "districts": [
+    "Sahibganj",
+    "Dumka",
+    "Pakur",
+    "Godda"
+   ],
+   "provisional": false,
+   "what": "The Santal rising against moneylenders, landlords, and the Company state in the Damin-i-koh and Santal Parganas.",
+   "source": "Andersen 2022"
+  },
+  {
+   "key": "ulgulan",
+   "name": "Birsa Munda's Ulgulan",
+   "when": "1899–1900",
+   "districts": [
+    "Khunti",
+    "Ranchi"
+   ],
+   "provisional": false,
+   "what": "The Munda rising led by Birsa Munda against dikus and the colonial land settlement; the origin of the khuntkatti protections later written into the 1908 Tenancy Act.",
+   "source": "Singh 1966"
+  },
+  {
+   "key": "koelkaro",
+   "name": "Koel Karo anti-dam movement",
+   "when": "1970s–2001",
+   "districts": [
+    "Khunti",
+    "Ranchi"
+   ],
+   "provisional": false,
+   "what": "Three decades of refusal to let the Koel and Karo rivers be dammed; police fired on protesters at Tapkara in February 2001.",
+   "films": [
+    "WOS-116",
+    "WOS-022"
+   ]
+  },
+  {
+   "key": "bauxite",
+   "name": "Against bauxite mining on the plateau",
+   "when": "1990s",
+   "districts": [
+    "Gumla",
+    "Lohardaga"
+   ],
+   "provisional": true,
+   "what": "Forest villages against bauxite leases on the plateau, filmed by Akhra as an ant fighting an elephant.",
+   "films": [
+    "WOS-020"
+   ]
+  },
+  {
+   "key": "jadugoda",
+   "name": "Jadugoda against uranium",
+   "when": "1990s–",
+   "districts": [
+    "Purbi Singhbhum (East Singhbhum)"
+   ],
+   "provisional": false,
+   "what": "Villages around the Uranium Corporation of India's mines and tailings ponds organise against radiation harm to health and land.",
+   "films": [
+    "WOS-117",
+    "WOS-120",
+    "WOS-123"
+   ]
+  },
+  {
+   "key": "kutku",
+   "name": "Kutku-Mandal dam",
+   "when": "1990s",
+   "districts": [
+    "Palamu"
+   ],
+   "provisional": false,
+   "what": "A closed sluice gate on the North Koel flooded some thirty-two villages.",
+   "films": [
+    "WOS-021"
+   ]
+  },
+  {
+   "key": "spongeiron",
+   "name": "Against sponge-iron pollution",
+   "when": "2000s–",
+   "districts": [
+    "Saraikela-Kharsawan",
+    "Pashchimi Singhbhum (West Singhbhum)"
+   ],
+   "provisional": true,
+   "what": "People living beside the sponge-iron belt contest the dust and heat on air, health, and fields.",
+   "films": [
+    "WOS-108"
+   ]
+  },
+  {
+   "key": "pathalgadi",
+   "name": "Pathalgadi",
+   "when": "2017–19",
+   "districts": [
+    "Khunti"
+   ],
+   "provisional": false,
+   "what": "Villages raise inscribed stone slabs asserting Fifth Schedule provisions and gram sabha self-rule; more than ten thousand people named in sedition cases, withdrawn in December 2019.",
+   "source": "Sharma 2019; Scroll Staff 2019"
+  },
+  {
+   "key": "statehood",
+   "name": "Jharkhand movement",
+   "when": "1930s–2000",
+   "districts": [],
+   "provisional": false,
+   "what": "The long movement for a separate state, won in November 2000; Ram Dayal Munda among its intellectuals.",
+   "films": [
+    "WOS-024"
+   ]
+  }
+ ],
+ "themes": {
+  "extraction": {
+   "label": "Mining and industry",
+   "color": "#8a3b1f"
+  },
+  "displacement": {
+   "label": "Dams and displacement",
+   "color": "#2f5f8a"
+  },
+  "selfrule": {
+   "label": "Self-rule and movements",
+   "color": "#7a2f5f"
+  },
+  "memory": {
+   "label": "Song, festival, and memory",
+   "color": "#b07a1a"
+  },
+  "migration": {
+   "label": "Migration",
+   "color": "#1f7a7a"
+  },
+  "livelihood": {
+   "label": "Land and livelihood",
+   "color": "#4f7a2f"
+  },
+  "voice": {
+   "label": "Collectives and voice",
+   "color": "#5a4f8a"
+  }
+ },
+ "places": {
+  "rourkela": {
+   "name": "Rourkela, Sundargarh district, Odisha",
+   "lat": 22.2604,
+   "lng": 84.8536
+  },
+  "rayagada": {
+   "name": "Rayagada district, Odisha",
+   "lat": 19.1712,
+   "lng": 83.4163
+  },
+  "jagdalpur": {
+   "name": "Bastar district, Chhattisgarh",
+   "lat": 19.0748,
+   "lng": 82.008
+  },
+  "dhamtari": {
+   "name": "Dhamtari district, Chhattisgarh",
+   "lat": 20.7074,
+   "lng": 81.5497
+  },
+  "kanker": {
+   "name": "Kanker district, Chhattisgarh",
+   "lat": 20.2719,
+   "lng": 81.4917
+  },
+  "bhopal": {
+   "name": "Bhopal, Madhya Pradesh",
+   "lat": 23.2599,
+   "lng": 77.4126
+  },
+  "jalpaiguri": {
+   "name": "Tea gardens, Jalpaiguri district, North Bengal",
+   "lat": 26.5167,
+   "lng": 88.7333
+  },
+  "dibrugarh": {
+   "name": "Tea gardens, Dibrugarh district, Assam",
+   "lat": 27.4728,
+   "lng": 94.912
+  },
+  "andaman": {
+   "name": "South Andaman district, Andaman and Nicobar Islands",
+   "lat": 11.6234,
+   "lng": 92.7265
+  }
+ },
+ "funders": {
+  "collective": {
+   "label": "The collectives themselves",
+   "color": "#262422"
+  },
+  "state": {
+   "label": "State institutions",
+   "color": "#8a3b1f"
+  },
+  "broadcast": {
+   "label": "Public service broadcasting",
+   "color": "#b07a1a"
+  },
+  "development": {
+   "label": "Development organisations",
+   "color": "#4f7a2f"
+  },
+  "corporate": {
+   "label": "Corporate philanthropy",
+   "color": "#2f5f8a"
+  },
+  "solidarity": {
+   "label": "International solidarity",
+   "color": "#7a2f5f"
+  },
+  "independent": {
+   "label": "Independent or not stated",
+   "color": "#8a857c"
+  }
+ },
+ "institutions": [
+  {
+   "key": "tri",
+   "name": "Dr. Ram Dayal Munda Tribal Welfare Research Institute (TRI)",
+   "kind": "state",
+   "city": "Ranchi",
+   "lat": 23.3441,
+   "lng": 85.3096,
+   "catalog": "WOS-041",
+   "role": "The Jharkhand government's tribal research institute commissioned Akhra's festival films Karam and Sohrai and Biju Toppo's Tapu Rajee, holds screenings in its hall in Ranchi, and in 2025 began the Dharti Aaba Tribal Film Festival."
+  },
+  {
+   "key": "tsf",
+   "name": "Tata Steel Foundation: Samvaad and Samuday Ke Saath",
+   "kind": "corporate",
+   "city": "Jamshedpur",
+   "lat": 22.8046,
+   "lng": 86.2029,
+   "catalog": "WOS-095",
+   "role": "The company's foundation co-produced the animated Mundari Srishtikatha, runs Samvaad, its annual tribal conclave, and since 2015 the Samuday Ke Saath film programme, which screened Naachi Se Baanchi at IIM Ranchi in 2023. Tapu Rajee was shown in Jamshedpur at Tata's invitation."
+  },
+  {
+   "key": "pradan",
+   "name": "PRADAN",
+   "kind": "development",
+   "city": "New Delhi (head office); field teams across Jharkhand",
+   "lat": 28.5672,
+   "lng": 77.21,
+   "catalog": "WOS-075",
+   "role": "The development organisation commissioned Akhra's Ek Ropa Dhaan, made Lac Ke Hazar Rang, and keeps a public Knowledge Repository of training and documentary films on agriculture, forest produce, and women's collectives."
+  },
+  {
+   "key": "fd",
+   "name": "Films Division of India",
+   "kind": "state",
+   "city": "Mumbai",
+   "lat": 18.9696,
+   "lng": 72.809,
+   "catalog": null,
+   "role": "The state documentary body financed Naachi Se Baanchi, Akhra's film on Ram Dayal Munda, through a grant the collective sought and won."
+  },
+  {
+   "key": "psbt",
+   "name": "Public Service Broadcasting Trust, with Doordarshan",
+   "kind": "broadcast",
+   "city": "New Delhi",
+   "lat": 28.6139,
+   "lng": 77.209,
+   "catalog": null,
+   "role": "Produced Shriprakash's Buru Gaara, Eer, and Hul Sengal Aguwa, and Biju Toppo's The Hunt and Jharia, for broadcast."
+  },
+  {
+   "key": "actionaid",
+   "name": "ActionAid",
+   "kind": "development",
+   "city": "New Delhi",
+   "lat": 28.5355,
+   "lng": 77.251,
+   "catalog": null,
+   "role": "Funded K. P. Sasi's song-film Gaon Chhodab Nahi, which Akhra carried hand to hand."
+  },
+  {
+   "key": "apu",
+   "name": "Azim Premji University, Centre for Local Democracy",
+   "kind": "development",
+   "city": "Bengaluru",
+   "lat": 12.9716,
+   "lng": 77.5946,
+   "catalog": null,
+   "role": "With Gram Swashasan Abhiyan, published Akhra's Gram Sabha ki Kahani films and podcasts."
+  }
+ ],
+ "offmap_institutions": [
+  {
+   "name": "Adivasi-Koordination in Deutschland",
+   "kind": "solidarity",
+   "role": "Partnered with Akhra on Accumulated Injustice, on the Rourkela steel plant."
+  },
+  {
+   "name": "UCLA Library, Los Angeles",
+   "kind": "repository",
+   "role": "Holds twelve Akhra films for the university's students and researchers, and is where several links on this map lead.",
+   "catalog": "WOS-105"
+  }
  ]
 }

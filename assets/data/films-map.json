@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-12",
  "note": "District level only. A film resolves to a district only where the film or its catalog record names the place; 'provisional' marks a district the author infers and has not yet confirmed from the film. Off-map films are listed, not drawn. Extras are films not yet in the catalog.",
  "groups": {
   "akhra": "AKHRA, Ranchi",
@@ -7,6 +7,151 @@
   "curator": "Curator's own films",
   "other": "Other makers"
  },
+ "themes": {
+  "extraction": {
+   "label": "Mining and industry",
+   "color": "#8a3b1f"
+  },
+  "displacement": {
+   "label": "Dams and displacement",
+   "color": "#2f5f8a"
+  },
+  "selfrule": {
+   "label": "Self-rule and movements",
+   "color": "#7a2f5f"
+  },
+  "memory": {
+   "label": "Song, festival, and memory",
+   "color": "#b07a1a"
+  },
+  "migration": {
+   "label": "Migration",
+   "color": "#1f7a7a"
+  },
+  "livelihood": {
+   "label": "Land and livelihood",
+   "color": "#4f7a2f"
+  },
+  "voice": {
+   "label": "Collectives and voice",
+   "color": "#5a4f8a"
+  }
+ },
+ "funders": {
+  "collective": {
+   "label": "The collectives themselves",
+   "color": "#262422"
+  },
+  "state": {
+   "label": "State institutions",
+   "color": "#8a3b1f"
+  },
+  "broadcast": {
+   "label": "Public service broadcasting",
+   "color": "#b07a1a"
+  },
+  "development": {
+   "label": "Development organisations",
+   "color": "#4f7a2f"
+  },
+  "corporate": {
+   "label": "Corporate philanthropy",
+   "color": "#2f5f8a"
+  },
+  "solidarity": {
+   "label": "International solidarity",
+   "color": "#7a2f5f"
+  },
+  "independent": {
+   "label": "Independent or not stated",
+   "color": "#8a857c"
+  }
+ },
+ "institutions": [
+  {
+   "key": "tri",
+   "name": "Dr. Ram Dayal Munda Tribal Welfare Research Institute (TRI)",
+   "kind": "state",
+   "city": "Ranchi",
+   "lat": 23.3441,
+   "lng": 85.3096,
+   "catalog": "WOS-041",
+   "role": "The Jharkhand government's tribal research institute commissioned Akhra's festival films Karam and Sohrai and Biju Toppo's Tapu Rajee, holds screenings in its hall in Ranchi, and in 2025 began the Dharti Aaba Tribal Film Festival."
+  },
+  {
+   "key": "tsf",
+   "name": "Tata Steel Foundation: Samvaad and Samuday Ke Saath",
+   "kind": "corporate",
+   "city": "Jamshedpur",
+   "lat": 22.8046,
+   "lng": 86.2029,
+   "catalog": "WOS-095",
+   "role": "The company's foundation co-produced the animated Mundari Srishtikatha, runs Samvaad, its annual tribal conclave, and since 2015 the Samuday Ke Saath film programme, which screened Naachi Se Baanchi at IIM Ranchi in 2023. Tapu Rajee was shown in Jamshedpur at Tata's invitation."
+  },
+  {
+   "key": "pradan",
+   "name": "PRADAN",
+   "kind": "development",
+   "city": "New Delhi (head office); field teams across Jharkhand",
+   "lat": 28.5672,
+   "lng": 77.21,
+   "catalog": "WOS-075",
+   "role": "The development organisation commissioned Akhra's Ek Ropa Dhaan, made Lac Ke Hazar Rang, and keeps a public Knowledge Repository of training and documentary films on agriculture, forest produce, and women's collectives."
+  },
+  {
+   "key": "fd",
+   "name": "Films Division of India",
+   "kind": "state",
+   "city": "Mumbai",
+   "lat": 18.9696,
+   "lng": 72.809,
+   "catalog": null,
+   "role": "The state documentary body financed Naachi Se Baanchi, Akhra's film on Ram Dayal Munda, through a grant the collective sought and won."
+  },
+  {
+   "key": "psbt",
+   "name": "Public Service Broadcasting Trust, with Doordarshan",
+   "kind": "broadcast",
+   "city": "New Delhi",
+   "lat": 28.6139,
+   "lng": 77.209,
+   "catalog": null,
+   "role": "Produced Shriprakash's Buru Gaara, Eer, and Hul Sengal Aguwa, and Biju Toppo's The Hunt and Jharia, for broadcast."
+  },
+  {
+   "key": "actionaid",
+   "name": "ActionAid",
+   "kind": "development",
+   "city": "New Delhi",
+   "lat": 28.5355,
+   "lng": 77.251,
+   "catalog": null,
+   "role": "Funded K. P. Sasi's song-film Gaon Chhodab Nahi, which Akhra carried hand to hand."
+  },
+  {
+   "key": "apu",
+   "name": "Azim Premji University, Centre for Local Democracy",
+   "kind": "development",
+   "city": "Bengaluru",
+   "lat": 12.9716,
+   "lng": 77.5946,
+   "catalog": null,
+   "role": "With Gram Swashasan Abhiyan, published Akhra's Gram Sabha ki Kahani films and podcasts."
+  }
+ ],
+ "offmap_institutions": [
+  {
+   "name": "Adivasi-Koordination in Deutschland",
+   "kind": "solidarity",
+   "role": "Partnered with Akhra on Accumulated Injustice, on the Rourkela steel plant."
+  },
+  {
+   "name": "UCLA Library, Los Angeles",
+   "kind": "repository",
+   "role": "Holds twelve Akhra films for the university's students and researchers, and is where several links on this map lead.",
+   "catalog": "WOS-105"
+  }
+ ],
  "films": [
   {
    "id": "WOS-001",
@@ -25,7 +170,11 @@
    ],
    "provisional": false,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "livelihood",
+   "funder": "independent",
+   "institution": null,
+   "points": []
   },
   {
    "id": "WOS-002",
@@ -44,7 +193,24 @@
    ],
    "provisional": false,
    "movement": null,
-   "beyond": "Rayagada (Odisha), Dhamtari (Chhattisgarh)"
+   "beyond": "Rayagada (Odisha), Dhamtari (Chhattisgarh)",
+   "theme": "livelihood",
+   "funder": "independent",
+   "institution": null,
+   "points": [
+    {
+     "name": "Rayagada district, Odisha",
+     "lat": 19.1712,
+     "lng": 83.4163,
+     "key": "rayagada"
+    },
+    {
+     "name": "Dhamtari district, Chhattisgarh",
+     "lat": 20.7074,
+     "lng": 81.5497,
+     "key": "dhamtari"
+    }
+   ]
   },
   {
    "id": "WOS-003",
@@ -61,7 +227,18 @@
    "districts": [],
    "provisional": false,
    "movement": null,
-   "beyond": "Dhamtari, Chhattisgarh"
+   "beyond": "Dhamtari, Chhattisgarh",
+   "theme": "voice",
+   "funder": "independent",
+   "institution": null,
+   "points": [
+    {
+     "name": "Dhamtari district, Chhattisgarh",
+     "lat": 20.7074,
+     "lng": 81.5497,
+     "key": "dhamtari"
+    }
+   ]
   },
   {
    "id": "WOS-004",
@@ -78,7 +255,18 @@
    "districts": [],
    "provisional": false,
    "movement": null,
-   "beyond": "Bhanupratappur, Chhattisgarh"
+   "beyond": "Bhanupratappur, Chhattisgarh",
+   "theme": "livelihood",
+   "funder": "development",
+   "institution": null,
+   "points": [
+    {
+     "name": "Kanker district, Chhattisgarh",
+     "lat": 20.2719,
+     "lng": 81.4917,
+     "key": "kanker"
+    }
+   ]
   },
   {
    "id": "WOS-020",
@@ -98,7 +286,11 @@
    ],
    "provisional": true,
    "movement": "bauxite",
-   "beyond": null
+   "beyond": null,
+   "theme": "extraction",
+   "funder": "collective",
+   "institution": null,
+   "points": []
   },
   {
    "id": "WOS-021",
@@ -117,7 +309,11 @@
    ],
    "provisional": false,
    "movement": "kutku",
-   "beyond": null
+   "beyond": null,
+   "theme": "displacement",
+   "funder": "collective",
+   "institution": null,
+   "points": []
   },
   {
    "id": "WOS-022",
@@ -136,7 +332,24 @@
    ],
    "provisional": false,
    "movement": "koelkaro",
-   "beyond": "Kashipur (Odisha), Nagarnar (Chhattisgarh)"
+   "beyond": "Kashipur (Odisha), Nagarnar (Chhattisgarh)",
+   "theme": "displacement",
+   "funder": "collective",
+   "institution": null,
+   "points": [
+    {
+     "name": "Rayagada district, Odisha",
+     "lat": 19.1712,
+     "lng": 83.4163,
+     "key": "rayagada"
+    },
+    {
+     "name": "Bastar district, Chhattisgarh",
+     "lat": 19.0748,
+     "lng": 82.008,
+     "key": "jagdalpur"
+    }
+   ]
   },
   {
    "id": "WOS-023",
@@ -153,7 +366,18 @@
    "districts": [],
    "provisional": false,
    "movement": null,
-   "beyond": "Rourkela, Sundargarh district, Odisha"
+   "beyond": "Rourkela, Sundargarh district, Odisha",
+   "theme": "extraction",
+   "funder": "solidarity",
+   "institution": null,
+   "points": [
+    {
+     "name": "Rourkela, Sundargarh district, Odisha",
+     "lat": 22.2604,
+     "lng": 84.8536,
+     "key": "rourkela"
+    }
+   ]
   },
   {
    "id": "WOS-024",
@@ -172,7 +396,11 @@
    ],
    "provisional": true,
    "movement": "statehood",
-   "beyond": null
+   "beyond": null,
+   "theme": "memory",
+   "funder": "state",
+   "institution": "fd",
+   "points": []
   },
   {
    "id": "WOS-025",
@@ -189,7 +417,11 @@
    "districts": [],
    "provisional": true,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "extraction",
+   "funder": "collective",
+   "institution": null,
+   "points": []
   },
   {
    "id": "WOS-026",
@@ -204,9 +436,20 @@
    "catalog": "catalog.html#WOS-026",
    "group": "other",
    "districts": [],
-   "provisional": false,
+   "provisional": true,
    "movement": null,
-   "beyond": "Madhya Pradesh"
+   "beyond": "Madhya Pradesh",
+   "theme": "voice",
+   "funder": "collective",
+   "institution": null,
+   "points": [
+    {
+     "name": "Bhopal, Madhya Pradesh",
+     "lat": 23.2599,
+     "lng": 77.4126,
+     "key": "bhopal"
+    }
+   ]
   },
   {
    "id": "WOS-027",
@@ -223,7 +466,18 @@
    "districts": [],
    "provisional": false,
    "movement": null,
-   "beyond": "Bhopal, Madhya Pradesh"
+   "beyond": "Bhopal, Madhya Pradesh",
+   "theme": "voice",
+   "funder": "collective",
+   "institution": null,
+   "points": [
+    {
+     "name": "Bhopal, Madhya Pradesh",
+     "lat": 23.2599,
+     "lng": 77.4126,
+     "key": "bhopal"
+    }
+   ]
   },
   {
    "id": "WOS-068",
@@ -243,7 +497,11 @@
    ],
    "provisional": false,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "selfrule",
+   "funder": "development",
+   "institution": "apu",
+   "points": []
   },
   {
    "id": "WOS-069",
@@ -260,7 +518,11 @@
    "districts": [],
    "provisional": true,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "livelihood",
+   "funder": "development",
+   "institution": "pradan",
+   "points": []
   },
   {
    "id": "WOS-073",
@@ -279,7 +541,11 @@
    ],
    "provisional": true,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "memory",
+   "funder": "collective",
+   "institution": null,
+   "points": []
   },
   {
    "id": "WOS-074",
@@ -296,7 +562,11 @@
    "districts": [],
    "provisional": true,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "livelihood",
+   "funder": "development",
+   "institution": "pradan",
+   "points": []
   },
   {
    "id": "WOS-086",
@@ -315,7 +585,11 @@
    ],
    "provisional": true,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "memory",
+   "funder": "state",
+   "institution": null,
+   "points": []
   },
   {
    "id": "WOS-106",
@@ -332,7 +606,11 @@
    "districts": [],
    "provisional": true,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "extraction",
+   "funder": "collective",
+   "institution": null,
+   "points": []
   },
   {
    "id": "WOS-107",
@@ -349,7 +627,24 @@
    "districts": [],
    "provisional": false,
    "movement": null,
-   "beyond": "Tea gardens of North Bengal and Assam"
+   "beyond": "Tea gardens of North Bengal and Assam",
+   "theme": "migration",
+   "funder": "collective",
+   "institution": null,
+   "points": [
+    {
+     "name": "Tea gardens, Jalpaiguri district, North Bengal",
+     "lat": 26.5167,
+     "lng": 88.7333,
+     "key": "jalpaiguri"
+    },
+    {
+     "name": "Tea gardens, Dibrugarh district, Assam",
+     "lat": 27.4728,
+     "lng": 94.912,
+     "key": "dibrugarh"
+    }
+   ]
   },
   {
    "id": "WOS-108",
@@ -369,7 +664,11 @@
    ],
    "provisional": true,
    "movement": "spongeiron",
-   "beyond": null
+   "beyond": null,
+   "theme": "extraction",
+   "funder": "collective",
+   "institution": null,
+   "points": []
   },
   {
    "id": "WOS-109",
@@ -389,7 +688,11 @@
    ],
    "provisional": false,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "memory",
+   "funder": "collective",
+   "institution": null,
+   "points": []
   },
   {
    "id": "WOS-110",
@@ -406,7 +709,11 @@
    "districts": [],
    "provisional": true,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "memory",
+   "funder": "state",
+   "institution": "tri",
+   "points": []
   },
   {
    "id": "WOS-111",
@@ -423,7 +730,11 @@
    "districts": [],
    "provisional": true,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "memory",
+   "funder": "state",
+   "institution": "tri",
+   "points": []
   },
   {
    "id": "WOS-112",
@@ -440,7 +751,11 @@
    "districts": [],
    "provisional": true,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "memory",
+   "funder": "corporate",
+   "institution": "tsf",
+   "points": []
   },
   {
    "id": "WOS-114",
@@ -457,7 +772,18 @@
    "districts": [],
    "provisional": false,
    "movement": null,
-   "beyond": "Rayagada district, Odisha"
+   "beyond": "Rayagada district, Odisha",
+   "theme": "voice",
+   "funder": "independent",
+   "institution": null,
+   "points": [
+    {
+     "name": "Rayagada district, Odisha",
+     "lat": 19.1712,
+     "lng": 83.4163,
+     "key": "rayagada"
+    }
+   ]
   },
   {
    "id": "WOS-116",
@@ -477,7 +803,11 @@
    ],
    "provisional": false,
    "movement": "koelkaro",
-   "beyond": null
+   "beyond": null,
+   "theme": "displacement",
+   "funder": "independent",
+   "institution": null,
+   "points": []
   },
   {
    "id": "WOS-117",
@@ -496,7 +826,11 @@
    ],
    "provisional": false,
    "movement": "jadugoda",
-   "beyond": null
+   "beyond": null,
+   "theme": "extraction",
+   "funder": "independent",
+   "institution": null,
+   "points": []
   },
   {
    "id": "WOS-118",
@@ -513,7 +847,11 @@
    "districts": [],
    "provisional": true,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "selfrule",
+   "funder": "independent",
+   "institution": null,
+   "points": []
   },
   {
    "id": "WOS-119",
@@ -533,7 +871,11 @@
    ],
    "provisional": true,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "voice",
+   "funder": "broadcast",
+   "institution": "psbt",
+   "points": []
   },
   {
    "id": "WOS-120",
@@ -552,7 +894,11 @@
    ],
    "provisional": false,
    "movement": "jadugoda",
-   "beyond": null
+   "beyond": null,
+   "theme": "extraction",
+   "funder": "independent",
+   "institution": null,
+   "points": []
   },
   {
    "id": "WOS-121",
@@ -572,7 +918,11 @@
    ],
    "provisional": true,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "memory",
+   "funder": "broadcast",
+   "institution": "psbt",
+   "points": []
   },
   {
    "id": "WOS-122",
@@ -592,7 +942,11 @@
    ],
    "provisional": true,
    "movement": "hul",
-   "beyond": null
+   "beyond": null,
+   "theme": "memory",
+   "funder": "broadcast",
+   "institution": "psbt",
+   "points": []
   },
   {
    "id": "WOS-123",
@@ -611,7 +965,11 @@
    ],
    "provisional": false,
    "movement": "jadugoda",
-   "beyond": "Diné, Laguna, and Acoma lands, US Southwest"
+   "beyond": "Diné, Laguna, and Acoma lands, US Southwest",
+   "theme": "extraction",
+   "funder": "independent",
+   "institution": null,
+   "points": []
   },
   {
    "id": "WOS-124",
@@ -628,7 +986,11 @@
    "districts": [],
    "provisional": false,
    "movement": null,
-   "beyond": "Democratic Republic of the Congo"
+   "beyond": "Democratic Republic of the Congo",
+   "theme": "extraction",
+   "funder": "independent",
+   "institution": null,
+   "points": []
   },
   {
    "id": "WOS-125",
@@ -647,14 +1009,18 @@
    ],
    "provisional": true,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "selfrule",
+   "funder": "independent",
+   "institution": null,
+   "points": []
   },
   {
    "id": "X-TAPU",
    "title": "Tapu Rajee (Island Story)",
    "year": "2024",
    "creator": "Biju Toppo; Dr. Ram Dayal Munda Tribal Welfare Research Institute",
-   "description": "The people the map cannot hold: Oraon and Munda families taken to the Andamans as labour, outside the protected territory and absent from the register of the place they live. Screened in Jamshedpur and, in 2026, in Bangalore.",
+   "description": "The people the map cannot hold: Oraon and Munda migrants settled in the Andaman Islands, outside the protected territory and absent from the list of the place they live. Screened in Jamshedpur and, in 2026, in Bangalore.",
    "thumb": null,
    "access": "none",
    "url": null,
@@ -664,7 +1030,18 @@
    "districts": [],
    "provisional": false,
    "movement": null,
-   "beyond": "Andaman Islands: Oraon and Munda migrants who demand Scheduled Tribe listing in relation to Jharkhand under Article 342"
+   "beyond": "Andaman Islands: Oraon and Munda migrants who seek Scheduled Tribe listing in relation to Jharkhand under Article 342",
+   "theme": "migration",
+   "funder": "state",
+   "institution": "tri",
+   "points": [
+    {
+     "name": "South Andaman district, Andaman and Nicobar Islands",
+     "lat": 11.6234,
+     "lng": 92.7265,
+     "key": "andaman"
+    }
+   ]
   },
   {
    "id": "X-GCN",
@@ -681,7 +1058,11 @@
    "districts": [],
    "provisional": true,
    "movement": null,
-   "beyond": null
+   "beyond": null,
+   "theme": "displacement",
+   "funder": "development",
+   "institution": "actionaid",
+   "points": []
   }
  ],
  "movements": [
